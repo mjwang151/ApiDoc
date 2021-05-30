@@ -4923,9 +4923,54 @@
                                 <w:rFonts w:ascii="宋体" w:hAnsi="宋体"/>
                                 <w:szCs w:val="21"/>
                             </w:rPr>
-                            <w:t>${api.input.demo}</w:t>
+                            <w:t></w:t>
                         </w:r>
                     </w:p>
+
+                    <w:tbl>
+                        <w:tblPr>
+                            <w:tblW w:w="0" w:type="auto"/>
+                            <w:tblBorders>
+                                <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                                <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                                <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                                <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                                <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                                <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                            </w:tblBorders>
+                            <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+                        </w:tblPr>
+                        <w:tblGrid>
+                            <w:gridCol w:w="8522"/>
+                        </w:tblGrid>
+                        <w:tr w:rsidR="0020226E" w:rsidRPr="00A84814" w:rsidTr="00A84814">
+                            <w:tc>
+                                <w:tcPr>
+                                    <w:tcW w:w="8522" w:type="dxa"/>
+                                    <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+                                </w:tcPr>
+                                <w:p w:rsidR="0020226E" w:rsidRPr="00A84814" w:rsidRDefault="0020226E" w:rsidP="00A84814">
+                                    <w:pPr>
+                                        <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                                        <w:rPr>
+                                            <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:hint="eastAsia"/>
+                                            <w:szCs w:val="21"/>
+                                        </w:rPr>
+                                    </w:pPr>
+                                    <w:bookmarkStart w:id="185" w:name="_GoBack"/>
+                                    <w:r w:rsidRPr="00A84814">
+                                        <w:rPr>
+                                            <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:hint="eastAsia"/>
+                                            <w:szCs w:val="21"/>
+                                        </w:rPr>
+                                        <w:t>${api.input.demo}</w:t>
+                                    </w:r>
+                                    <w:bookmarkEnd w:id="185"/>
+                                </w:p>
+                            </w:tc>
+                        </w:tr>
+                    </w:tbl>
+
                     <w:p w:rsidR="00D22AE7" w:rsidRDefault="00D22AE7">
                         <w:pPr>
                             <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
@@ -5760,9 +5805,53 @@
                                 <w:rFonts w:ascii="宋体" w:hAnsi="宋体"/>
                                 <w:szCs w:val="21"/>
                             </w:rPr>
-                            <w:t>${api.output.demo}</w:t>
+                            <w:t></w:t>
                         </w:r>
                     </w:p>
+
+                    <w:tbl>
+                        <w:tblPr>
+                            <w:tblW w:w="0" w:type="auto"/>
+                            <w:tblBorders>
+                                <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                                <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                                <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                                <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                                <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                                <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                            </w:tblBorders>
+                            <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+                        </w:tblPr>
+                        <w:tblGrid>
+                            <w:gridCol w:w="8522"/>
+                        </w:tblGrid>
+                        <w:tr w:rsidR="0020226E" w:rsidRPr="00A84814" w:rsidTr="00A84814">
+                            <w:tc>
+                                <w:tcPr>
+                                    <w:tcW w:w="8522" w:type="dxa"/>
+                                    <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+                                </w:tcPr>
+                                <w:p w:rsidR="0020226E" w:rsidRPr="00A84814" w:rsidRDefault="0020226E" w:rsidP="00A84814">
+                                    <w:pPr>
+                                        <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                                        <w:rPr>
+                                            <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:hint="eastAsia"/>
+                                            <w:szCs w:val="21"/>
+                                        </w:rPr>
+                                    </w:pPr>
+                                    <w:bookmarkStart w:id="185" w:name="_GoBack"/>
+                                    <w:r w:rsidRPr="00A84814">
+                                        <w:rPr>
+                                            <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:hint="eastAsia"/>
+                                            <w:szCs w:val="21"/>
+                                        </w:rPr>
+                                        <w:t>${api.output.demo}</w:t>
+                                    </w:r>
+                                    <w:bookmarkEnd w:id="185"/>
+                                </w:p>
+                            </w:tc>
+                        </w:tr>
+                    </w:tbl>
 </#list>
                 </w:body>
             </w:document>
