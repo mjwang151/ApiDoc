@@ -61,7 +61,7 @@ public class PdfCore {
         }finally {
             // 关闭office
             app.invoke("Quit", 0);
-            log.info("导出pdf成功！！!");
+            log.info("导出pdf成功！！!!");
         }
     }
 }
