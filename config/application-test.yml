@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    als:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      username: chaxun
+      password: chaxun
+      jdbc-url: jdbc:mysql://192.168.61.78:3306/data_asset_service?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      type: com.alibaba.druid.pool.DruidDataSource
+    eds:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      username: chaxun
+      password: chaxun
+      jdbc-url: jdbc:mysql://192.168.61.78:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      type: com.alibaba.druid.pool.DruidDataSource
