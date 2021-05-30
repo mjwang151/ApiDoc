@@ -4,6 +4,7 @@ package com.amarsoft.exportdoc.inner;
 import com.alibaba.fastjson.JSONObject;
 import com.amarsoft.bean.AssetApi;
 import com.amarsoft.bean.AssetApiParams;
+import com.amarsoft.exportdoc.ApiDocBuilder;
 import com.amarsoft.exportdoc.util.JSONTools;
 import com.amarsoft.service.impl.DocServiceImpl;
 import com.amarsoft.service.impl.EdsDocServiceImpl;
@@ -270,10 +271,10 @@ public class InnerMessageUtil {
         joj.put("orderno", biz.getSortNo());
         joj.put("transcode", serviceBiz.getApi());
         joj.put("intf", biz.getName());
-        joj.put("intfname", biz.getChName());
+        joj.put("intfname", ApiDocBuilder.special_string(biz.getChName()));
         joj.put("needtype", biz.getIsRequired().equals("Y") ? "TRUE" : "FALSE");
         joj.put("intftype", biz.getDataType());
-        joj.put("remark", biz.getDescr());
+        joj.put("remark", ApiDocBuilder.special_string(biz.getDescr()));
         return joj;
     }
 

@@ -52,6 +52,22 @@ public class ApiDocBuilder {
 	}
 
 	/**
+	 * xml文件中转义
+	 * @param inString
+	 * @return
+	 */
+	public static String special_string(String inString){
+		if(StringUtils.isBlank(inString)){
+			return inString;
+		}
+		return inString.replace("&","&amp;")
+				.replace("<","&lt;")
+				.replace(">","&gt;")
+				.replace("\"","&quot;")
+				.replace("'","&apos;");
+
+	}
+	/**
 	 * 构建一个接口
 	 * @param intf
 	 * @param index
@@ -62,18 +78,18 @@ public class ApiDocBuilder {
 		ApiDef api = new ApiDef();
 		JSONObject demoMessage = innerMessageUtil.demoMessage(intf).getJSONObject("data");
 		api.setId("2."+index.getAndIncrement()+".");
-		api.setName(demoMessage.getString("servicename"));
+		api.setName(special_string(demoMessage.getString("servicename")));
 		api.setNo(demoMessage.getString("serviceno"));
 		ApiSegDef input = new ApiSegDef();
 		input.setTitle("输入参数");
-		input.setDemo(demoMessage.getString("demoinput") == null?"":demoMessage.getString("demoinput"));
+		input.setDemo(special_string(demoMessage.getString("demoinput") == null?"":demoMessage.getString("demoinput")));
 		JSONArray inputArr = demoMessage.getJSONArray("input");
 		buildApiInput(input, inputArr);
 		api.setInput(input);
 
 		ApiSegDef output = new ApiSegDef();
 		output.setTitle("输出参数");
-		output.setDemo(demoMessage.getString("demooutput") == null?"":demoMessage.getString("demooutput"));
+		output.setDemo(special_string(demoMessage.getString("demooutput") == null?"":demoMessage.getString("demooutput")));
 		JSONArray outputArr = demoMessage.getJSONArray("output");
 
 		Map<String,List<JSONObject>> outputArr2 = (Map<String,List<JSONObject>>) demoMessage.get("outputmap");
