@@ -4,9 +4,11 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.amarsoft.exportdoc.inner.InnerMessageUtil;
 import com.amarsoft.exportdoc.util.JSONTools;
+import lombok.Getter;
+import lombok.Setter;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.thymeleaf.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -16,12 +18,23 @@ import java.util.Map.Entry;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 @Component
+@Setter
+@Getter
 public class ApiDocBuilder {
 	@Autowired
 	InnerMessageUtil innerMessageUtil;
 
+	String com_type;
+
+
+	public ApiDocBuilder(String com_type) {
+		this.com_type = com_type;
+	}
+	public ApiDocBuilder() {
+	}
 	public  ApiDoc build(String intfs) throws Exception {
 		ApiDoc doc = new ApiDoc();
+		doc.setCompany_type(com_type);
 		String serviceUrl = doc.getServiceurl();
 		doc.setServiceurl(serviceUrl);
 		AtomicInteger index = new AtomicInteger(1);
@@ -31,7 +44,7 @@ public class ApiDocBuilder {
 				list.add(intf);
 			}
 		}
-		list = list.stream().sorted((b1,b2)->b1.compareTo(b2)).collect(Collectors.toList());
+//		list = list.stream().sorted((b1,b2)->b1.compareTo(b2)).collect(Collectors.toList());
 		for (int i = 0; i < list.size(); i++) {
 			doc.getBody().getApilist().add(buildApiDef(list.get(i), index));
 		}
@@ -64,7 +77,6 @@ public class ApiDocBuilder {
 		JSONArray outputArr = demoMessage.getJSONArray("output");
 
 		Map<String,List<JSONObject>> outputArr2 = (Map<String,List<JSONObject>>) demoMessage.get("outputmap");
-
 		buildApiOutput(output, outputArr,outputArr2);
 		api.setOutput(output);
 		return api;

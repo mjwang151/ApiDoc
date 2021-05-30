@@ -5,10 +5,17 @@ import java.util.Date;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import lombok.Getter;
+import lombok.Setter;
+import org.apache.commons.lang3.StringUtils;
 
+@Getter
+@Setter
 public class ApiDoc {
 	private String createdate = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
-	private String serviceurl = "https://app.amarsoft.com/hubservicetest/api/gateway";
+	public String serviceurl = "https://app.amarsoft.com/hubservicetest/api/gateway";
+
+	public String company_type;
 	private String demoinput = "{\"transcode\":\"P1301\",\"source\":\"***\",\"userid\":\"***\",\"orgid\":\"***\",\"account\":\"***\",\"params\":{\"name\":\"中国银行\"}}";
 	private String demooutput = "{\"msg\":\"数据响应正确!\",\"code\":\"0000\",\"data\":[{……],\"pageIndex\":1,\"totalPage\":2,\"pageSize\":20,\"totalCount\":33}";
 	private String[][] datas = {
@@ -35,9 +42,30 @@ public class ApiDoc {
 	private ApiDocBody body = new ApiDocBody();
 	
 	public JSONObject tojson() {
+		String proServiceurl_data = "://www.amardata.com/data/api/gateway";
+		String proServiceurl_credit = "://www.amardata.com/credit/api/gateway";
 		JSONObject jo = new JSONObject(true);
 		jo.put("createdate", createdate);
 		jo.put("serviceurl", serviceurl);
+		JSONArray prourls = new JSONArray();
+		if(StringUtils.isNotBlank(company_type)){
+			switch (company_type){
+				case "credit":
+					prourls.add("http"+proServiceurl_credit);
+					prourls.add("https"+proServiceurl_credit);
+					break;
+				case "data":
+					prourls.add("http"+proServiceurl_data);
+					prourls.add("https"+proServiceurl_data);
+					break;
+			}
+		}else{
+			prourls.add("http"+proServiceurl_credit);
+			prourls.add("http"+proServiceurl_data);
+			prourls.add("https"+proServiceurl_credit);
+			prourls.add("https"+proServiceurl_data);
+		}
+		jo.put("proserviceurl", prourls);
 		jo.put("demoinput", demoinput);
 		jo.put("demooutput", demooutput);
 		JSONArray commoninput = new JSONArray();

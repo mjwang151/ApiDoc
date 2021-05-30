@@ -1,12 +1,14 @@
 package com.amarsoft.exportdoc;
 
 import com.alibaba.fastjson.JSONObject;
+import com.amarsoft.exportdoc.template.DocTemplate;
 import com.amarsoft.utils.ApplicationContextUtils;
 import freemarker.cache.FileTemplateLoader;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
@@ -21,30 +23,18 @@ import java.util.Date;
 @Component
 @Slf4j
 public class ApiDocExportService implements ExportFileService{
-
+	@Autowired
+	@Qualifier("CommonTemplate")
+	DocTemplate commonTemplate;
 
 	@Autowired
 	ApiDocBuilder apiDocBuilder;
-	private static Configuration initConfiguration() throws IOException {
-		Configuration conf = new Configuration(Configuration.VERSION_2_3_31);
-        conf.setDefaultEncoding("utf-8");
-    	String path=ApplicationContextUtils.getProperty("doctemplate.config");
-		//使用FileTemplateLoader
-		FileTemplateLoader templateLoader=new FileTemplateLoader(new File(path));
-		conf.setTemplateLoader(templateLoader);
-        return conf;
-	}
-	
-	public static Template getTemplate() throws IOException {
-		Configuration configuration = initConfiguration();
-		return configuration.getTemplate("edsservice.ftl");
-	}
 	
 	@Override
 	public void handle(Writer out, JSONObject jsonParams) throws Exception {
 		JSONObject tojson = apiDocBuilder.build(jsonParams.getString("apis")).tojson();
 		log.info("接口json为："+tojson.toJSONString());
-		Template t = getTemplate();
+		Template t = commonTemplate.getTemplate();
 		t.process(tojson, out); 
 	}
 

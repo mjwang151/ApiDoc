@@ -926,9 +926,10 @@
                                 <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:hint="eastAsia"/>
                                 <w:szCs w:val="21"/>
                             </w:rPr>
-                            <w:t>生产环境调用地址：</w:t>
+                            <w:t>生产环境调用地址 (http/https均支持)：</w:t>
                         </w:r>
                     </w:p>
+ <#list proserviceurl as urls>
                     <w:p w:rsidR="00BB02E3" w:rsidRPr="008874D6" w:rsidRDefault="00BB02E3">
                         <w:pPr>
                             <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
@@ -942,61 +943,17 @@
                         </w:pPr>
                         <w:r>
                             <w:rPr>
-                                <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:hint="eastAsia"/>
-                                <w:szCs w:val="21"/>
-                            </w:rPr>
-                            <w:t>数据公司</w:t>
-                        </w:r>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:ascii="宋体" w:hAnsi="宋体"/>
-                                <w:szCs w:val="21"/>
-                            </w:rPr>
-                            <w:t>:</w:t>
-                        </w:r>
-                        <w:r w:rsidRPr="008874D6">
-                            <w:rPr>
                                 <w:rStyle w:val="a7"/>
                                 <w:rFonts w:ascii="Segoe UI" w:hAnsi="Segoe UI" w:cs="Segoe UI"/>
                                 <w:color w:val="0052CC"/>
+                                <w:szCs w:val="21"/>
                                 <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
                             </w:rPr>
-                            <w:t>http://www.amardata.com/data/api/gateway</w:t>
+<#--                            生产环境地址-->
+                            <w:t>${urls}</w:t>
                         </w:r>
                     </w:p>
-                    <w:p w:rsidR="00BB02E3" w:rsidRDefault="00BB02E3">
-                        <w:pPr>
-                            <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
-                            <w:ind w:firstLine="420"/>
-                            <w:rPr>
-                                <w:rFonts w:ascii="宋体" w:hAnsi="宋体"/>
-                                <w:szCs w:val="21"/>
-                            </w:rPr>
-                        </w:pPr>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:hint="eastAsia"/>
-                                <w:szCs w:val="21"/>
-                            </w:rPr>
-                            <w:t>征信公司</w:t>
-                        </w:r>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:ascii="宋体" w:hAnsi="宋体"/>
-                                <w:szCs w:val="21"/>
-                            </w:rPr>
-                            <w:t>:</w:t>
-                        </w:r>
-                        <w:r w:rsidRPr="008874D6">
-                            <w:rPr>
-                                <w:rStyle w:val="a7"/>
-                                <w:rFonts w:ascii="Segoe UI" w:hAnsi="Segoe UI" w:cs="Segoe UI"/>
-                                <w:color w:val="0052CC"/>
-                                <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
-                            </w:rPr>
-                            <w:t>http://www.amardata.com/credit/api/gateway</w:t>
-                        </w:r>
-                    </w:p>
+</#list>
                     <w:p w:rsidR="00BB02E3" w:rsidRDefault="00BB02E3">
                         <w:pPr>
                             <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>

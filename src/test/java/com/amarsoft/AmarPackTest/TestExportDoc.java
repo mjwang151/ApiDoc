@@ -4,10 +4,12 @@ import com.alibaba.fastjson.JSONObject;
 import com.amarsoft.bean.AssetApi;
 import com.amarsoft.exportdoc.ApiDocBuilder;
 import com.amarsoft.exportdoc.ApiDocExportService;
+import com.amarsoft.exportdoc.template.DocTemplate;
 import com.amarsoft.service.impl.DocServiceImpl;
 import freemarker.template.Template;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.File;
@@ -26,6 +28,11 @@ public class TestExportDoc {
     ApiDocBuilder apiDocBuilder;
     @Autowired
     ApiDocExportService apiDocExportService;
+
+	@Autowired
+	@Qualifier("CommonTemplate")
+	DocTemplate commonTemplate;
+
     @org.junit.jupiter.api.Test
     public void test(){
      OutputStreamWriter pw = null;//定义一个流
@@ -34,9 +41,10 @@ public class TestExportDoc {
 			  //1:使用File类创建一个要操作的文件路径
 	        File file = new File("E://"+transcode+".doc");
 			Writer writer = new OutputStreamWriter(new FileOutputStream(file),"utf-8");
+			apiDocBuilder.setCom_type("data");
 			JSONObject tojson = apiDocBuilder.build(transcode).tojson();
 			System.out.println(tojson);
-			Template t = apiDocExportService.getTemplate();
+			Template t = commonTemplate.getTemplate();
 			t.process(tojson, writer);
 		} catch (Exception e) {
 			e.printStackTrace();
