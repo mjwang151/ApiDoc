@@ -35,4 +35,4 @@ server:
       suffix: .log
     basedir: .
 logging.config: ./config/logback-spring.xml
-doctemplate.config: D:/workspace/ApiDoc/config/doctemplate
+doctemplate.config: ./config/doctemplate
