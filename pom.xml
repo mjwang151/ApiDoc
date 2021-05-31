@@ -119,6 +119,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<configuration>
 					<useSystemClassLoader>false</useSystemClassLoader>
+					<!--打jar包忽略test类-->
 					<skip>true</skip>
 				</configuration>
 			</plugin>

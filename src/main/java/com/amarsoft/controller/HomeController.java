@@ -46,7 +46,12 @@ public class HomeController {
 	DocTemplate IconTemplate;
 
 
-
+	/**
+	 * 自动生成文档
+	 * http://192.168.61.102:7114/amarpack/download?company=data&templateType=edsservice-icon&transcodes=R1103
+	 * @param downloadDocBean
+	 * @param resp
+	 */
     @ApiOperation(value = "下载接口文档", notes = "aaa")
     @ApiImplicitParams({
 			@ApiImplicitParam(name = "transcodes", value = "接口编号(用逗号隔开)", required = true, defaultValue = ""),
