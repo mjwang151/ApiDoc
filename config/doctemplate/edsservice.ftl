@@ -4941,12 +4941,12 @@
                             <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
                         </w:tblPr>
                         <w:tblGrid>
-                            <w:gridCol w:w="8522"/>
+                            <w:gridCol w:w="8336"/>
                         </w:tblGrid>
                         <w:tr w:rsidR="0020226E" w:rsidRPr="00A84814" w:rsidTr="00A84814">
                             <w:tc>
                                 <w:tcPr>
-                                    <w:tcW w:w="8522" w:type="dxa"/>
+                                    <w:tcW w:w="8336" w:type="dxa"/>
                                     <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
                                 </w:tcPr>
                                 <w:p w:rsidR="0020226E" w:rsidRPr="00A84814" w:rsidRDefault="0020226E" w:rsidP="00A84814">
@@ -5823,12 +5823,12 @@
                             <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
                         </w:tblPr>
                         <w:tblGrid>
-                            <w:gridCol w:w="8522"/>
+                            <w:gridCol w:w="8336"/>
                         </w:tblGrid>
                         <w:tr w:rsidR="0020226E" w:rsidRPr="00A84814" w:rsidTr="00A84814">
                             <w:tc>
                                 <w:tcPr>
-                                    <w:tcW w:w="8522" w:type="dxa"/>
+                                    <w:tcW w:w="8336" w:type="dxa"/>
                                     <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
                                 </w:tcPr>
                                 <w:p w:rsidR="0020226E" w:rsidRPr="00A84814" w:rsidRDefault="0020226E" w:rsidP="00A84814">
