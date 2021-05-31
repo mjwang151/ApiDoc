@@ -11,7 +11,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-//@MapperScan("com.amarsoft.dao") 使用durid 时不需要配此属性
 public class App {
 
 	public static void main(String[] args) { 

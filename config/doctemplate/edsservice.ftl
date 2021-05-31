@@ -485,76 +485,8 @@
                         </w:r>
                         <w:proofErr w:type="gramEnd"/>
                     </w:p>
-                    <w:p w:rsidR="00D4442D" w:rsidRPr="00D4442D" w:rsidRDefault="00D4442D" w:rsidP="00D4442D">
-                        <w:pPr>
-                            <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
-                            <w:ind w:left="420"/>
-                            <w:jc w:val="right"/>
-                            <w:rPr>
-                                <w:rFonts w:ascii="华文楷体" w:eastAsia="华文楷体" w:hAnsi="华文楷体" w:cs="微软雅黑"/>
-                                <w:sz w:val="32"/>
-                                <w:szCs w:val="36"/>
-                            </w:rPr>
-                        </w:pPr>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:cs="微软雅黑" w:hint="eastAsia"/>
-                                <w:sz w:val="36"/>
-                                <w:szCs w:val="36"/>
-                            </w:rPr>
-                            <w:t xml:space="preserve"></w:t>
-                        </w:r>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:cs="微软雅黑"/>
-                                <w:sz w:val="36"/>
-                                <w:szCs w:val="36"/>
-                            </w:rPr>
-                            <w:t xml:space="preserve"></w:t>
-                        </w:r>
-                        <w:r w:rsidRPr="00D4442D">
-                            <w:rPr>
-                                <w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:cs="微软雅黑"/>
-                                <w:sz w:val="32"/>
-                                <w:szCs w:val="36"/>
-                            </w:rPr>
-                            <w:t xml:space="preserve"></w:t>
-                        </w:r>
-                    </w:p>
-                    <w:p w:rsidR="00BB02E3" w:rsidRDefault="00BB02E3">
-                        <w:pPr>
-                            <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
-                            <w:jc w:val="center"/>
-                            <w:rPr>
-                                <w:rFonts w:ascii="宋体" w:hAnsi="宋体"/>
-                                <w:szCs w:val="21"/>
-                            </w:rPr>
-                        </w:pPr>
-                    </w:p>
-                    <w:p w:rsidR="00BB02E3" w:rsidRDefault="00BB02E3">
-                        <w:pPr>
-                            <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
-                            <w:rPr>
-                                <w:rFonts w:ascii="宋体" w:hAnsi="宋体"/>
-                                <w:szCs w:val="21"/>
-                            </w:rPr>
-                        </w:pPr>
-                        <w:bookmarkStart w:id="0" w:name="_Toc407026480"/>
-                        <w:bookmarkStart w:id="1" w:name="_Toc401859184"/>
-                        <w:bookmarkStart w:id="2" w:name="_Toc412809030"/>
-                        <w:bookmarkEnd w:id="0"/>
-                        <w:bookmarkEnd w:id="1"/>
-                        <w:bookmarkEnd w:id="2"/>
-                    </w:p>
-                    <#-- <w:p w:rsidR="00BB02E3" w:rsidRDefault="00BB02E3">
-                                           <w:pPr>
-                                               <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
-                                               <w:rPr>
-                                                   <w:rFonts w:ascii="宋体" w:hAnsi="宋体"/>
-                                                   <w:szCs w:val="21"/>
-                                               </w:rPr>
-                                           </w:pPr>
-                                       </w:p>-->
+
+
                     <w:p w:rsidR="00BB02E3" w:rsidRDefault="00BB02E3">
                         <w:pPr>
                             <w:pStyle w:val="1"/>
