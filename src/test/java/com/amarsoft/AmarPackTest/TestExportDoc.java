@@ -47,7 +47,7 @@ public class TestExportDoc {
     public void test(){
      OutputStreamWriter pw = null;//定义一个流
 		try {
-			String transcode = "R1104,R1105,R1160,R1175,R11A73,R11A74,R11C53,R11C64,R11C72,R11D68,R11D76V2,R11D79,R11D84,R1201V2,R16D01,R16D02,R227,R228,R229,R230,R231,R314,B1166,B11B66";
+			String transcode = "R1104";
 
 			//1:使用File类创建一个要操作的文件路径
 			File file = null;

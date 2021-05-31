@@ -50,7 +50,7 @@ public class HomeController {
     @ApiOperation(value = "下载接口文档", notes = "aaa")
     @ApiImplicitParams({
 			@ApiImplicitParam(name = "transcodes", value = "接口编号(用逗号隔开)", required = true, defaultValue = ""),
-			@ApiImplicitParam(name = "company", value = "data/credit", required = false, defaultValue = "dataAndcredit"),
+			@ApiImplicitParam(name = "company", value = "data/credit", required = false, defaultValue = ""),
 			@ApiImplicitParam(name = "templateType", value = "模板类型", required = false, defaultValue = "edsservice-icon"),
 			@ApiImplicitParam(name = "isNeedDemo", value = "是否需要demo", required = false)
 	})

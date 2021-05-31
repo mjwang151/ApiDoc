@@ -379,3 +379,100 @@
 2021-05-31 15:15:06.893 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
 2021-05-31 15:15:06.895 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2021-05-31 15:15:06.902 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-05-31 15:15:11.747 [main] INFO  com.amarsoft.App - Starting App using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 15408 (H:\github\ApiDoc\target\classes started by mjwang in H:\github\ApiDoc)
+2021-05-31 15:15:11.750 [main] INFO  com.amarsoft.App - The following profiles are active: test
+2021-05-31 15:15:12.806 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-31 15:15:12.811 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-31 15:15:12.812 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-31 15:15:12.812 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-31 15:15:12.862 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring embedded WebApplicationContext
+2021-05-31 15:15:12.863 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1071 ms
+2021-05-31 15:15:12.967 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-05-31 15:15:12.993 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-05-31 15:15:13.168 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-31 15:15:13.215 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-31 15:15:13.335 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-05-31 15:15:13.388 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-31 15:15:13.406 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/amarpack'
+2021-05-31 15:15:13.406 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-31 15:15:13.417 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-31 15:15:13.434 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-31 15:15:13.508 [main] INFO  com.amarsoft.App - Started App in 2.146 seconds (JVM running for 2.592)
+2021-05-31 15:15:58.539 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-31 15:15:58.539 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-31 15:15:58.540 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-31 15:20:31.664 [main] INFO  com.amarsoft.AmarPackTest.Test - Starting Test using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 12988 (started by mjwang in H:\github\ApiDoc)
+2021-05-31 15:20:31.664 [main] INFO  com.amarsoft.AmarPackTest.Test - The following profiles are active: test
+2021-05-31 15:20:32.972 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-05-31 15:20:33.020 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-05-31 15:20:33.519 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-31 15:20:33.735 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-31 15:20:33.886 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-05-31 15:20:34.024 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-31 15:20:34.045 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-31 15:20:34.070 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-31 15:20:34.193 [main] INFO  com.amarsoft.AmarPackTest.Test - Started Test in 2.83 seconds (JVM running for 3.662)
+2021-05-31 15:20:34.368 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-31 15:20:34.559 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-31 15:20:34.627 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.amarsoft.AmarPackTest.TestExportDoc], using SpringBootContextLoader
+2021-05-31 15:20:34.629 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.amarsoft.AmarPackTest.TestExportDoc]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-05-31 15:20:34.630 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.amarsoft.AmarPackTest.TestExportDoc]: TestExportDoc does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-05-31 15:20:34.631 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.amarsoft.App for test class com.amarsoft.AmarPackTest.TestExportDoc
+2021-05-31 15:20:34.633 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-05-31 15:20:34.633 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4a9b3956, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4217bce6, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@aa752bb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@77fc19cf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@643ecfef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1b31af02, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2bb31455, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c16528d, org.springframework.test.context.event.EventPublishingTestExecutionListener@2e45a357, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@389a5022, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@bb8ead8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5b44318, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6e807e2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6c995c5d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@203b953c]
+2021-05-31 15:20:35.532 [main] INFO  com.amarsoft.exportpdf.PdfCore - ø™ º◊™ªª...
+2021-05-31 15:20:37.390 [main] INFO  com.amarsoft.exportpdf.PdfCore - ¥Úø™Œƒº˛: F:\ApiDoc20210531.doc
+2021-05-31 15:20:38.541 [main] INFO  com.amarsoft.exportpdf.PdfCore - ¡Ì¥ÊŒ™: F://ApiDoc20210531.pdf
+2021-05-31 15:20:42.251 [main] INFO  com.amarsoft.AmarPackTest.Test - Starting Test using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 16656 (started by mjwang in H:\github\ApiDoc)
+2021-05-31 15:20:42.252 [main] INFO  com.amarsoft.AmarPackTest.Test - The following profiles are active: test
+2021-05-31 15:20:43.432 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-05-31 15:20:43.481 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-05-31 15:20:44.048 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-31 15:20:44.283 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-31 15:20:44.437 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-05-31 15:20:44.587 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-31 15:20:44.608 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-31 15:20:44.632 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-31 15:20:44.741 [main] INFO  com.amarsoft.AmarPackTest.Test - Started Test in 2.809 seconds (JVM running for 3.652)
+2021-05-31 15:20:44.965 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-31 15:20:45.184 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-31 15:20:45.257 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.amarsoft.AmarPackTest.TestExportDoc], using SpringBootContextLoader
+2021-05-31 15:20:45.258 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.amarsoft.AmarPackTest.TestExportDoc]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-05-31 15:20:45.258 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.amarsoft.AmarPackTest.TestExportDoc]: TestExportDoc does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-05-31 15:20:45.259 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.amarsoft.App for test class com.amarsoft.AmarPackTest.TestExportDoc
+2021-05-31 15:20:45.261 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-05-31 15:20:45.261 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4a9b3956, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4217bce6, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@aa752bb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@77fc19cf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@643ecfef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1b31af02, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2bb31455, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c16528d, org.springframework.test.context.event.EventPublishingTestExecutionListener@2e45a357, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@389a5022, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@bb8ead8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5b44318, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6e807e2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6c995c5d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@203b953c]
+2021-05-31 15:20:45.981 [main] INFO  com.amarsoft.exportpdf.PdfCore - ø™ º◊™ªª...
+2021-05-31 15:20:47.356 [main] INFO  com.amarsoft.exportpdf.PdfCore - ◊™ªª≥…π¶£¨”√ ±£∫11823ms
+2021-05-31 15:20:47.359 [main] INFO  com.amarsoft.exportpdf.PdfCore - µº≥ˆpdf≥…π¶£°£°!!!!
+2021-05-31 15:20:47.371 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-31 15:20:47.373 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-05-31 15:20:47.383 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-05-31 15:20:47.796 [main] INFO  com.amarsoft.exportpdf.PdfCore - ¥Úø™Œƒº˛: F:\ApiDoc20210531.doc
+2021-05-31 15:20:50.067 [main] INFO  com.amarsoft.exportpdf.PdfCore - ¡Ì¥ÊŒ™: F://ApiDoc20210531.pdf
+2021-05-31 15:20:58.160 [main] INFO  com.amarsoft.exportpdf.PdfCore - ◊™ªª≥…π¶£¨”√ ±£∫12179ms
+2021-05-31 15:20:58.164 [main] INFO  com.amarsoft.exportpdf.PdfCore - µº≥ˆpdf≥…π¶£°£°!!!!
+2021-05-31 15:20:58.172 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-31 15:20:58.175 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-05-31 15:20:58.186 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-05-31 15:29:58.165 [main] INFO  com.amarsoft.AmarPackTest.TestExportDoc - Starting TestExportDoc using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 20188 (started by mjwang in H:\github\ApiDoc)
+2021-05-31 15:29:58.166 [main] INFO  com.amarsoft.AmarPackTest.TestExportDoc - The following profiles are active: test
+2021-05-31 15:29:59.270 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-05-31 15:29:59.323 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-05-31 15:29:59.872 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-31 15:30:00.109 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-31 15:30:00.250 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-05-31 15:30:00.391 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-31 15:30:00.410 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-31 15:30:00.433 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-31 15:30:00.531 [main] INFO  com.amarsoft.AmarPackTest.TestExportDoc - Started TestExportDoc in 2.703 seconds (JVM running for 3.571)
+2021-05-31 15:30:00.732 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-31 15:30:01.118 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-31 15:30:01.479 [main] INFO  com.amarsoft.exportpdf.PdfCore - ÂºÄÂßãËΩ¨Êç¢...
+2021-05-31 15:30:03.342 [main] INFO  com.amarsoft.exportpdf.PdfCore - ÊâìÂºÄÊñá‰ª∂: F:\R1104.doc
+2021-05-31 15:30:03.962 [main] INFO  com.amarsoft.exportpdf.PdfCore - Âè¶Â≠ò‰∏∫: F://R1104.pdf
+2021-05-31 15:30:05.607 [main] INFO  com.amarsoft.exportpdf.PdfCore - ËΩ¨Êç¢ÊàêÂäüÔºåÁî®Êó∂Ôºö4127ms
+2021-05-31 15:30:05.609 [main] INFO  com.amarsoft.exportpdf.PdfCore - ÂØºÂá∫pdfÊàêÂäüÔºÅÔºÅ!!!!
+2021-05-31 15:30:05.624 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-31 15:30:05.625 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-05-31 15:30:05.637 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

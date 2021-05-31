@@ -119,6 +119,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<configuration>
 					<useSystemClassLoader>false</useSystemClassLoader>
+					<skip>true</skip>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -160,6 +161,6 @@
 		</plugins>
 
 
-		<finalName>AmarPackTest</finalName>
+		<finalName>ApiDoc</finalName>
 	</build>
 </project>
