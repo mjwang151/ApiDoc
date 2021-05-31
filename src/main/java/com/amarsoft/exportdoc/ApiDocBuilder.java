@@ -6,6 +6,7 @@ import com.amarsoft.exportdoc.inner.InnerMessageUtil;
 import com.amarsoft.exportdoc.util.JSONTools;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -20,6 +21,7 @@ import java.util.stream.Collectors;
 @Component
 @Setter
 @Getter
+@Slf4j
 public class ApiDocBuilder {
 	@Autowired
 	InnerMessageUtil innerMessageUtil;
@@ -77,24 +79,29 @@ public class ApiDocBuilder {
 	public  ApiDef buildApiDef(String intf, AtomicInteger index) throws Exception {
 		ApiDef api = new ApiDef();
 		JSONObject demoMessage = innerMessageUtil.demoMessage(intf).getJSONObject("data");
-		api.setId("2."+index.getAndIncrement()+".");
-		api.setName(special_string(demoMessage.getString("servicename")));
-		api.setNo(demoMessage.getString("serviceno"));
-		ApiSegDef input = new ApiSegDef();
-		input.setTitle("输入参数");
-		input.setDemo(special_string(demoMessage.getString("demoinput") == null?"":demoMessage.getString("demoinput")));
-		JSONArray inputArr = demoMessage.getJSONArray("input");
-		buildApiInput(input, inputArr);
-		api.setInput(input);
+		if(demoMessage != null && demoMessage.size() > 0){
+			api.setId("2."+index.getAndIncrement()+"");
+			api.setName(special_string(JSONTools.getString(demoMessage,"servicename")));
+			api.setNo(demoMessage.getString("serviceno"));
+			ApiSegDef input = new ApiSegDef();
+			input.setTitle("输入参数");
+			input.setDemo(special_string(demoMessage.getString("demoinput") == null?"":demoMessage.getString("demoinput")));
+			JSONArray inputArr = demoMessage.getJSONArray("input");
+			buildApiInput(input, inputArr);
+			api.setInput(input);
 
-		ApiSegDef output = new ApiSegDef();
-		output.setTitle("输出参数");
-		output.setDemo(special_string(demoMessage.getString("demooutput") == null?"":demoMessage.getString("demooutput")));
-		JSONArray outputArr = demoMessage.getJSONArray("output");
+			ApiSegDef output = new ApiSegDef();
+			output.setTitle("输出参数");
+			output.setDemo(special_string(demoMessage.getString("demooutput") == null?"":demoMessage.getString("demooutput")));
+			JSONArray outputArr = demoMessage.getJSONArray("output");
 
-		Map<String,List<JSONObject>> outputArr2 = (Map<String,List<JSONObject>>) demoMessage.get("outputmap");
-		buildApiOutput(output, outputArr,outputArr2);
-		api.setOutput(output);
+			Map<String,List<JSONObject>> outputArr2 = (Map<String,List<JSONObject>>) demoMessage.get("outputmap");
+			buildApiOutput(output, outputArr,outputArr2);
+			api.setOutput(output);
+		}else{
+			log.info("【"+intf+"】接口不存在！！！！！！，请检查接口列表！！！");
+			throw new Exception("【"+intf+"】接口不存在！！！！！！，请检查接口列表！！！");
+		}
 		return api;
 	}
 
