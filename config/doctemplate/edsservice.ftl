@@ -546,15 +546,15 @@
                         <w:bookmarkEnd w:id="1"/>
                         <w:bookmarkEnd w:id="2"/>
                     </w:p>
-                    <w:p w:rsidR="00BB02E3" w:rsidRDefault="00BB02E3">
-                        <w:pPr>
-                            <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
-                            <w:rPr>
-                                <w:rFonts w:ascii="宋体" w:hAnsi="宋体"/>
-                                <w:szCs w:val="21"/>
-                            </w:rPr>
-                        </w:pPr>
-                    </w:p>
+                    <#-- <w:p w:rsidR="00BB02E3" w:rsidRDefault="00BB02E3">
+                                           <w:pPr>
+                                               <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                                               <w:rPr>
+                                                   <w:rFonts w:ascii="宋体" w:hAnsi="宋体"/>
+                                                   <w:szCs w:val="21"/>
+                                               </w:rPr>
+                                           </w:pPr>
+                                       </w:p>-->
                     <w:p w:rsidR="00BB02E3" w:rsidRDefault="00BB02E3">
                         <w:pPr>
                             <w:pStyle w:val="1"/>
@@ -11110,7 +11110,7 @@ FjotmLWwgEUecnuWPqT3NFFOdapNWk7hGlCLvFGHJ4A0iXWG1Rpbvz2n+0EB127t27pt6Zro72zg
                                 <vt:i4>5</vt:i4>
                             </vt:variant>
                             <vt:variant>
-                                <vt:lpwstr>https://app.amarsoft.com/hubservicetest/api/gateway</vt:lpwstr>
+                                <vt:lpwstr>${serviceurl}</vt:lpwstr>
                             </vt:variant>
                             <vt:variant>
                                 <vt:lpwstr/>

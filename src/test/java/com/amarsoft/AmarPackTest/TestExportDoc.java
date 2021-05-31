@@ -39,27 +39,32 @@ public class TestExportDoc {
 	@Qualifier("CommonTemplate")
 	DocTemplate commonTemplate;
 
+	@Autowired
+	@Qualifier("IconTemplate")
+	DocTemplate IconTemplate;
+
     @org.junit.jupiter.api.Test
     public void test(){
      OutputStreamWriter pw = null;//定义一个流
 		try {
-			String transcode = "R1103,R314,R11C53";
+			String transcode = "P203";
 			//1:使用File类创建一个要操作的文件路径
 			File file = null;
 			if(transcode.contains(",")){
-				file = new File("E://ApiDoc"+ new SimpleDateFormat("yyyyMMdd").format(new Date()) +".doc");
+				file = new File("F://ApiDoc"+ new SimpleDateFormat("yyyyMMdd").format(new Date()) +".doc");
 			}else{
-				file = new File("E://"+transcode+".doc");
+				file = new File("F://"+transcode+".doc");
 			}
 			Writer writer = new OutputStreamWriter(new FileOutputStream(file),"utf-8");
 			apiDocBuilder.setCom_type("data");
 			JSONObject tojson = apiDocBuilder.build(transcode).tojson();
-			Template t = commonTemplate.getTemplate();
+			System.out.println(tojson);
+			Template t = IconTemplate.getTemplate();
 			t.process(tojson, writer);
 			if(transcode.contains(",")){
-				PdfCore.parse(file.getAbsolutePath(),"E://ApiDoc"+ new SimpleDateFormat("yyyyMMdd").format(new Date()) +".pdf");
+				PdfCore.parse(file.getAbsolutePath(),"F://ApiDoc"+ new SimpleDateFormat("yyyyMMdd").format(new Date()) +".pdf");
 			}else{
-				PdfCore.parse(file.getAbsolutePath(),"E://"+transcode+".pdf");
+				PdfCore.parse(file.getAbsolutePath(),"F://"+transcode+".pdf");
 			}
 
 		} catch (Exception e) {
