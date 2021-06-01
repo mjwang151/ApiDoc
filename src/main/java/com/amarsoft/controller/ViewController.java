@@ -1,5 +1,7 @@
 package com.amarsoft.controller;
 
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,4 +25,13 @@ public class ViewController {
     public String main(Model model){
         return "main";
     }
+
+
+    @RequestMapping("getData")
+    public String getData(Model model){
+        return "TableView";
+    }
+
+
+
 }
