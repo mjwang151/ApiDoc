@@ -11,10 +11,10 @@
 </head>
 <link rel="stylesheet" th:href="@{layui/css/layui.css}" media="all"/>
 <script th:src="@{layui/layui.js}" charset="utf-8"></script>
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+<script th:src="@{jquery/jquery-3.4.1.js}" charset="utf-8"></script>
 
 <body>
-<div th:include="main :: headmenu"></div>
+
 <div class="demoTable">
     搜索ID：
     <div class="layui-inline">
@@ -22,33 +22,35 @@
     </div>
     <button class="layui-btn" data-type="reload">搜索</button>
 </div>
+<div th:fragment="queryview">
+    <table class="layui-hide" id="test" lay-filter="test" ></table>
 
-<table class="layui-hide" id="test" lay-filter="test"></table>
-
-<script type="text/html" id="toolbarDemo">
-    <div class="layui-btn-container">
-        <button class="layui-btn layui-btn-sm" lay-event="getCheckData">获取选中行数据</button>
-        <button class="layui-btn layui-btn-sm" lay-event="getCheckLength">获取选中数目</button>
-        <button class="layui-btn layui-btn-sm" lay-event="isAll">验证是否全选</button>
-    </div>
-</script>
-
+    <script type="text/html" id="toolbarDemo">
+        <div class="layui-btn-container">
+            <button class="layui-btn layui-btn-sm" lay-event="getCheckData">获取选中行数据</button>
+            <button class="layui-btn layui-btn-sm" lay-event="getCheckLength">获取选中数目</button>
+            <button class="layui-btn layui-btn-sm" lay-event="isAll">验证是否全选</button>
+        </div>
+    </script>
+</div>
 <script type="text/html" id="barDemo">
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 </script>
+<input type="hidden" id="tips" th:value="${#httpServletRequest.getAttribute('reqparam')}"></input>
+
 
 <script>
-    layui.use(['table', 'util'], function(){
+    layui.use(['table', 'util'], function () {
         var table = layui.table
-            ,util = layui.util;
+            , util = layui.util;
 
         //监听单元格编辑
-        table.on('edit(test3)', function(obj){
+        table.on('edit(test3)', function (obj) {
             var value = obj.value //得到修改后的值
-                ,data = obj.data //得到所在行所有键值
-                ,field = obj.field; //得到字段
-            layer.msg('[ID: '+ data.id +'] ' + field + ' 字段更改值为：'+ util.escape(value));
+                , data = obj.data //得到所在行所有键值
+                , field = obj.field; //得到字段
+            layer.msg('[ID: ' + data.id + '] ' + field + ' 字段更改值为：' + util.escape(value));
         });
     });
 </script>
@@ -57,54 +59,55 @@
 <script>
 
     //重新拼接数组标题行
-    function assembleTableCol(){
+    function assembleTableCol(reqparam) {
         let thisCols = [];  //定义标题空间
         var responseData;
         $.ajax({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
-            url: "query",
+            url: "query?reqparam=" + reqparam,
             method: 'get',
             dataType: 'json',
-            async:false,   // 重要，外赋值到responseData
-            success: function(res) {
+            async: false,   // 重要，外赋值到responseData
+            success: function (res) {
+                var dataList = res['data']
                 let defaultField = [];
-                // defaultField = "{field:'id', title: '', width:20, sort: true},,{field:'day', title: '某天', width:120}";
-                for (var i = 0; i < res.length; i++) {
-                    var l = res[i].split('_');
-                    // defaultField += ",,{field:'"+res[i]+"', title: '某天', width:120}";
-                    defaultField += ",,{field:'"+res[i]+"', title: '"+l[1]+"级', width:120}";
+                for (var i = 0; i < dataList.length; i++) {
+                    var l = dataList[i].split('@');
+                    if (i == 0) {
+                        defaultField += "{field:'" + l[0] + "', title: '" + l[1] + "', width:120}";
+                    } else {
+                        defaultField += ",,{field:'" + l[0] + "', title: '" + l[1] + "', width:120}";
+                    }
                 }
                 defaultField += ",,{fixed: 'right',title: '操作',width: 150,align: 'center',toolbar: '#barDemo'}";
                 defaultField = defaultField.split(',,');
                 for (var i = 0; i < defaultField.length; i++) {
-                    defaultField[i]=eval("("+defaultField[i]+")");
+                    defaultField[i] = eval("(" + defaultField[i] + ")");
                 }
-                // 下面是正确格式
-                // defaultField =[{field:'id', title: '', width:20, sort: true}
-                //                   ,{field:'day', title: '某天1', width:120}
-                //                   ,{field:'level_1_give', title: '某天2', width:120}
-                //                   ,{field:'level_2_give', title: '某天3', width:120}
-                //                   ,{fixed: 'right',title: '操作',width: 150,align: 'center',toolbar: '#barDemo'}];
                 console.log(defaultField);
-                responseData =  defaultField;
+                responseData = defaultField;
             }
         });
         let defaultLength = responseData.length;
-        for(let j=0;j<defaultLength;j++){   //追加默认标题
-            thisCols.push( responseData[j]);
+        for (let j = 0; j < defaultLength; j++) {   //追加默认标题
+            thisCols.push(responseData[j]);
         }
         return [thisCols];  //注意结果为：array[0]=thisCols
     }
 
-    layui.use('table', function(){
-        var table = layui.table;
-        let cols_arr = assembleTableCol();  //重新定义标题那行
+    var reqparam = '{"tableName":"eds_query_history2","sql":"select * from eds_query_history2 where begintime>\'2021/06/02\'","database":"hubserviceapilog"}';
+    reqparam = $('#tips').val()
+    reqparam = encodeURI(reqparam);
 
+    layui.use('table', function () {
+        var table = layui.table;
+        let cols_arr = assembleTableCol(reqparam);  //重新定义标题那行
+        console.log("渲染的列：" + cols_arr)
         table.render({
             elem: '#test'
-            , url: 'query2'
+            , url: 'queryData?reqparam=' + reqparam
             , toolbar: '#toolbarDemo' //开启头部工具栏，并为其绑定左侧模板
             , defaultToolbar: ['filter', 'exports', 'print', { //自定义头部工具栏右侧图标。如无需自定义，去除该参数即可
                 title: '提示'
@@ -113,19 +116,25 @@
             }]
             , title: '用户数据表'
             , cols: cols_arr
-            , page: true
+            , page: { //支持传入 laypage 组件的所有参数（某些参数除外，如：jump/elem） - 详见文档
+                layout: ['limit', 'count', 'prev', 'page', 'next', 'skip'] //自定义分页布局
+                //,curr: 5 //设定初始在第 5 页
+                , groups: 1 //只显示 1 个连续页码
+                , first: false //不显示首页
+                , last: false //不显示尾页
+            }
         });
 
         var $ = layui.$, active = {
-            reload: function(){
+            reload: function () {
                 var demoReload = $('#demoReload');
 
                 //执行重载
-                table.reload('testReload', {
+                table.reload('test', {
                     page: {
                         curr: 1 //重新从第 1 页开始
                     }
-                    ,where: {
+                    , where: {
                         key: {
                             id: demoReload.val()
                         }
@@ -134,11 +143,14 @@
             }
         };
 
-        $('.demoTable .layui-btn').on('click', function(){
+        $('.demoTable .layui-btn').on('click', function () {
             var type = $(this).data('type');
             active[type] ? active[type].call(this) : '';
         });
+
+
     });
 </script>
+
 </body>
 </html>

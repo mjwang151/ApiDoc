@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.amarsoft.dao.als.DataBaseConfigMapper">
+
+    <!-- 这里的id必须和UserMapper接口中的接口方法名相同 -->
+    <select id="getAllconfig" resultType="com.amarsoft.bean.DataBaseBean" parameterType="java.lang.String">
+        SELECT * from database_config where status='T' and environment=#{environment}
+    </select>
+</mapper>

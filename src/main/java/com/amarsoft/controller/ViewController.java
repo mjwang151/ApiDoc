@@ -2,9 +2,13 @@ package com.amarsoft.controller;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @author mjwang
@@ -13,9 +17,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 @RequestMapping
+@Slf4j
 public class ViewController {
 
-    @RequestMapping("view")
+    @RequestMapping("test")
     public String view(Model model){
         model.addAttribute("key","abc");
         return  "test";
@@ -28,10 +33,20 @@ public class ViewController {
 
 
     @RequestMapping("getData")
-    public String getData(Model model){
-        return "TableView";
+    public ModelAndView getData(Model model,HttpServletRequest request){
+        String reqparam = request.getParameter("reqparam");
+        ModelAndView mo = new ModelAndView();
+        mo.setViewName("TableView");
+        mo.addObject("reqparam",reqparam);
+        return mo;
     }
 
+    @RequestMapping("queryView")
+    public ModelAndView queryView(Model model){
+        ModelAndView mo = new ModelAndView();
+        mo.setViewName("query/QueryData");
+        return mo;
+    }
 
 
 }
