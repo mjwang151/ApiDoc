@@ -47,6 +47,11 @@ public class ViewController {
         mo.setViewName("query/QueryData");
         return mo;
     }
-
+    @RequestMapping("home")
+    public ModelAndView HomePage(Model model){
+        ModelAndView mo = new ModelAndView();
+        mo.setViewName("query/HomePage");
+        return mo;
+    }
 
 }

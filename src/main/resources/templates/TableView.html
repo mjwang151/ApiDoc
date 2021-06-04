@@ -25,13 +25,7 @@
 <div th:fragment="queryview">
     <table class="layui-hide" id="test" lay-filter="test" ></table>
 
-    <script type="text/html" id="toolbarDemo">
-        <div class="layui-btn-container">
-            <button class="layui-btn layui-btn-sm" lay-event="getCheckData">获取选中行数据</button>
-            <button class="layui-btn layui-btn-sm" lay-event="getCheckLength">获取选中数目</button>
-            <button class="layui-btn layui-btn-sm" lay-event="isAll">验证是否全选</button>
-        </div>
-    </script>
+
 </div>
 <script type="text/html" id="barDemo">
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
@@ -98,7 +92,9 @@
     }
 
     var reqparam = '{"tableName":"eds_query_history2","sql":"select * from eds_query_history2 where begintime>\'2021/06/02\'","database":"hubserviceapilog"}';
-    reqparam = $('#tips').val()
+    if($('#tips').val() != ''){
+        reqparam = $('#tips').val()
+    }
     reqparam = encodeURI(reqparam);
 
     layui.use('table', function () {
@@ -115,11 +111,12 @@
                 , icon: 'layui-icon-tips'
             }]
             , title: '用户数据表'
+            ,height: 'full-200'
             , cols: cols_arr
             , page: { //支持传入 laypage 组件的所有参数（某些参数除外，如：jump/elem） - 详见文档
                 layout: ['limit', 'count', 'prev', 'page', 'next', 'skip'] //自定义分页布局
                 //,curr: 5 //设定初始在第 5 页
-                , groups: 1 //只显示 1 个连续页码
+                , groups: 5 //只显示 1 个连续页码
                 , first: false //不显示首页
                 , last: false //不显示尾页
             }
@@ -128,11 +125,12 @@
         var $ = layui.$, active = {
             reload: function () {
                 var demoReload = $('#demoReload');
-
+                var curpage = 1;//$('#layui-table-page1').children('.layui-input').val()
+                // alert(curpage)
                 //执行重载
                 table.reload('test', {
                     page: {
-                        curr: 1 //重新从第 1 页开始
+                        curr: curpage //重新从第 1 页开始
                     }
                     , where: {
                         key: {

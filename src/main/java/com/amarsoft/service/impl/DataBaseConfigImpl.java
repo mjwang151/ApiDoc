@@ -102,6 +102,7 @@ public class DataBaseConfigImpl implements DataBaseConfigService {
                 count = rs.getInt(1);
             }
             sql =  "select * from ("+sql+") otbname " +"  limit "+start + "," + pageSize;
+            log.info("数据查询sql："+sql);
             ps = conn.prepareStatement(sql);
             rs = ps.executeQuery();
             List<String> fieldNames = new ArrayList<String>();

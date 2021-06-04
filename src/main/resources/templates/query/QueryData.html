@@ -20,26 +20,62 @@
 
 <div th:include="main :: headmenu"></div>
 <form class="layui-form" action="">
+    <div class="layui-btn-container">
+<!--        http://192.168.61.102:50401/analysis/dashboard/show/ac3b768ca178686123f4/-->
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn demo1">
+                下拉菜单
+                <i class="layui-icon layui-icon-down layui-font-12"></i>
+            </button>
+            <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
     <div class="layui-form-item layui-form-text">
         <label class="layui-form-label">文本域</label>
         <div class="layui-input-block">
             <textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
         </div>
     </div>
-    <div class="layui-form-item">
-        <div class="layui-input-block">
-            <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
-            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
-        </div>
-    </div>
+
 </form>
 <script>
-    var reqparam = '{"tableName":"eds_query_history2","sql":"select * from eds_query_history2 where begintime>\'2021/06/02\' limit 5","database":"hubserviceapilog"}';
+    var reqparam = '{"tableName":"eds_query_history2","sql":"select * from eds_query_history2 where begintime>\'2021/06/02\' limit 500","database":"hubserviceapilog"}';
     reqparam = "getData?reqparam="+encodeURI(reqparam);
     // document.getElementById("barframe").src = reqparam;
     $(document).ready(function() {
         $('#barframe').attr('src', reqparam);
     });
+</script>
+
+<script>
+    layui.use(['dropdown', 'util', 'layer', 'table'], function() {
+        var dropdown = layui.dropdown
+            , util = layui.util
+            , layer = layui.layer
+            , table = layui.table
+            , $ = layui.jquery;
+
+        //初演示
+        dropdown.render({
+            elem: '.demo1'
+            , data: [{
+                title: 'menu item11'
+                , id: 100
+            }, {
+                title: 'menu item22'
+                , id: 101
+            }, {
+                title: 'menu item33'
+                , id: 102
+            }]
+            , click: function (obj) {
+                layer.tips('点击了：' + obj.title, this.elem, {tips: [1, '#5FB878']})
+            }
+        });
+    })
 </script>
 
 <!--<div th:replace="getData :: queryview"></div>-->
@@ -51,7 +87,12 @@
         var form = layui.form;
         //监听提交
         form.on('submit(formDemo)', function(data){
-            layer.msg(JSON.stringify(data.field));
+            layer.msg(JSON.stringify(data.field.desc));
+            var sql = '{"tableName":"eds_query_history2","sql":"'+data.field.desc+'","database":"amar_data"}';
+            var reqpar = "getData?reqparam="+encodeURI(sql);
+            $(document).ready(function() {
+                $('#barframe').attr('src', reqpar);
+            });
             return false;
         });
     });
