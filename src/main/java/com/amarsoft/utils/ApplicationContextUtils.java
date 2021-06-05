@@ -9,6 +9,8 @@ import org.springframework.context.event.ApplicationContextEvent;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+
 @Component
 public class ApplicationContextUtils implements ApplicationListener<ApplicationContextEvent> {
 

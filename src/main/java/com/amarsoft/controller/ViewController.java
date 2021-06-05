@@ -31,7 +31,6 @@ public class ViewController {
         return "main";
     }
 
-
     @RequestMapping("getData")
     public ModelAndView getData(Model model,HttpServletRequest request){
         String reqparam = request.getParameter("reqparam");
@@ -53,5 +52,10 @@ public class ViewController {
         mo.setViewName("query/HomePage");
         return mo;
     }
-
+    @RequestMapping("Tab")
+    public ModelAndView Tab(Model model){
+        ModelAndView mo = new ModelAndView();
+        mo.setViewName("Tab");
+        return mo;
+    }
 }

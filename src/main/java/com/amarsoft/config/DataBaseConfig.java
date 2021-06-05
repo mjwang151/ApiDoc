@@ -4,7 +4,12 @@ package com.amarsoft.config;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.amarsoft.bean.DataBaseBean;
 import com.amarsoft.service.impl.DataBaseConfigImpl;
+import com.amarsoft.utils.ApplicationContextUtils;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -16,21 +21,23 @@ import java.util.List;
 import java.util.Map;
 
 @Component
-public class DataBaseConfig {
+@Slf4j
+public class DataBaseConfig  implements CommandLineRunner {
 
     public static volatile Map<String, DruidDataSource> dataSourceMap = new HashMap<String, DruidDataSource>();
 
     @Autowired
     DataBaseConfigImpl docServiceImpl;
 
-    @PostConstruct
-    public void test(){
-        List<DataBaseBean> allconfig = docServiceImpl.getAllconfig("dev");
+    @Override
+    public void run(String... args) throws Exception {
+        log.info("----开始加载数据源-----，当前环境为："+ApplicationContextUtils.getProperty("spring.profiles.active"));
+        List<DataBaseBean> allconfig = docServiceImpl.getAllconfig(ApplicationContextUtils.getProperty("spring.profiles.active"));
         allconfig.stream().forEach(v->{
             dataSourceMap.put(v.getDbname(),getJdbcTemplate(v));
+            log.info("加载数据源："+v.getDbname()+"完成...");
         });
     }
-
     public static Connection getConn(String dbname) throws SQLException {
         if(dataSourceMap.containsKey(dbname)){
             return dataSourceMap.get(dbname).getConnection();
@@ -56,6 +63,7 @@ public class DataBaseConfig {
         dataSource.setTestOnReturn(Boolean.parseBoolean(db.getTestOnReturn()));
         return dataSource;
     }
+
 
 
 }
