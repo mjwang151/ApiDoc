@@ -62,10 +62,10 @@ public class DataBaseConfigImpl implements DataBaseConfigService {
                     rs.close();
                 }
                 if(ps != null){
-                    rs.close();
+                    ps.close();
                 }
                 if(conn != null){
-                    rs.close();
+                    conn.close();
                 }
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
@@ -141,10 +141,10 @@ public class DataBaseConfigImpl implements DataBaseConfigService {
                     rs.close();
                 }
                 if(ps != null){
-                    rs.close();
+                    ps.close();
                 }
                 if(conn != null){
-                    rs.close();
+                    conn.close();
                 }
             } catch (SQLException throwables) {
                 throwables.printStackTrace();

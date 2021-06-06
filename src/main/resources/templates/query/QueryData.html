@@ -21,16 +21,16 @@
 <div th:include="main :: headmenu"></div>
 <div th:include="Tab :: Tab"></div>
 
+<div class="layui-btn-container">
+    <button class="layui-btn dbselect">
+        数据库选择
+        <i class="layui-icon layui-icon-down layui-font-12"></i>
+    </button>
+</div>
+
 <form class="layui-form" action="" style="margin-top: 30px">
-    <div class="layui-btn-container">
-<!--        http://192.168.61.102:50401/analysis/dashboard/show/ac3b768ca178686123f4/-->
-    </div>
     <div class="layui-form-item">
         <div class="layui-input-block">
-            <button class="layui-btn demo1">
-                数据库选择
-                <i class="layui-icon layui-icon-down layui-font-12"></i>
-            </button>
             <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
             <button type="reset" class="layui-btn layui-btn-primary">重置</button>
         </div>
@@ -46,35 +46,44 @@
 <script>
     var reqparam = '{"tableName":"eds_query_history2","sql":"select * from eds_query_history2 where begintime>\'2021/06/04\' limit 500","database":"hubserviceapilog"}';
     reqparam = "getData?reqparam="+encodeURI(reqparam);
-    // document.getElementById("barframe").src = reqparam;
     $(document).ready(function() {
         $('#barframe').attr('src', reqparam);
     });
 </script>
 
 <script>
+    function getDataSource() {
+        var responseData = [];
+        $.ajax({
+            type: "get",
+            contentType: "application/json",
+            url: "getDataSource",
+            dataType: 'json',
+            async: false,   // 重要，外赋值到responseData
+            success: function (result) {
+                if (result.status) {
+                    for (var i = 0; i < result.data.length; i++) {
+                        responseData.push(eval('(' + "{title:'" + result.data[i]['title'] + "', id: " + result.data[i]['id'] + "}"+ ')'));
+                    }
+                } else {
+                    alert("获取错误！")
+                }
+            }
+        });
+        return [responseData];
+    }
+
     layui.use(['dropdown', 'util', 'layer', 'table'], function() {
         var dropdown = layui.dropdown
-            , util = layui.util
-            , layer = layui.layer
-            , table = layui.table
-            , $ = layui.jquery;
-
-        //初演示
+            , layer = layui.layer;
+        var xiala = getDataSource();
+        alert("下拉数据："+xiala)
         dropdown.render({
-            elem: '.demo1'
-            , data: [{
-                title: 'menu item11'
-                , id: 100
-            }, {
-                title: 'menu item22'
-                , id: 101
-            }, {
-                title: 'menu item33'
-                , id: 102
-            }]
-            , click: function (obj) {
-                layer.tips('点击了：' + obj.title, this.elem, {tips: [1, '#5FB878']})
+            elem: '.dbselect'
+            ,trigger: 'hover'
+            ,data: xiala
+            ,click: function(obj){
+                layer.tips('点击了：'+ obj.title, this.elem, {tips: [1, '#5FB878']})
             }
         });
     })
