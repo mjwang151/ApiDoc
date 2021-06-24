@@ -1,0 +1,13 @@
+- 0:0:0:0:0:0:0:1 - - [05/Jun/2021:13:16:39 +0800] GET /amarpack/queryView HTTP/1.1 200 4047 0.235
+- 0:0:0:0:0:0:0:1 - - [05/Jun/2021:13:16:39 +0800] GET /amarpack/layui/css/layui.css HTTP/1.1 304 - 0.010
+- 0:0:0:0:0:0:0:1 - - [05/Jun/2021:13:16:39 +0800] GET /amarpack/layui/layui.js HTTP/1.1 304 - 0.010
+- 0:0:0:0:0:0:0:1 - - [05/Jun/2021:13:16:39 +0800] GET /amarpack/layui/css/modules/laydate/default/laydate.css?v=5.2.0 HTTP/1.1 304 - 0.003
+- 0:0:0:0:0:0:0:1 - - [05/Jun/2021:13:16:39 +0800] GET /amarpack/layui/css/modules/layer/default/layer.css?v=3.3.0 HTTP/1.1 304 - 0.002
+- 0:0:0:0:0:0:0:1 - - [05/Jun/2021:13:16:39 +0800] GET /amarpack/layui/css/modules/code.css?v=1 HTTP/1.1 304 - 0.002
+- 0:0:0:0:0:0:0:1 - - [05/Jun/2021:13:16:39 +0800] GET /amarpack/layui/font/iconfont.woff2?v=256 HTTP/1.1 304 - 0.002
+- 0:0:0:0:0:0:0:1 - - [05/Jun/2021:13:16:39 +0800] GET /amarpack/getData?reqparam=%7B%22tableName%22:%22eds_query_history2%22,%22sql%22:%22select%20*%20from%20eds_query_history2%20where%20begintime%3E%272021/06/02%27%20limit%20500%22,%22database%22:%22hubserviceapilog%22%7D HTTP/1.1 200 5986 0.021
+- 0:0:0:0:0:0:0:1 - - [05/Jun/2021:13:16:40 +0800] GET /amarpack/query?reqparam=%7B%22tableName%22:%22eds_query_history2%22,%22sql%22:%22select%20*%20from%20eds_query_history2%20where%20begintime%3E%272021/06/02%27%20limit%20500%22,%22database%22:%22hubserviceapilog%22%7D HTTP/1.1 200 384 1.036
+- 0:0:0:0:0:0:0:1 - - [05/Jun/2021:13:16:40 +0800] GET /favicon.ico HTTP/1.1 404 431 0.003
+- 0:0:0:0:0:0:0:1 - - [05/Jun/2021:13:16:40 +0800] GET /amarpack/queryData?reqparam=%7B%22tableName%22:%22eds_query_history2%22,%22sql%22:%22select%20*%20from%20eds_query_history2%20where%20begintime%3E%272021/06/02%27%20limit%20500%22,%22database%22:%22hubserviceapilog%22%7D&page=1&limit=10 HTTP/1.1 200 7050 0.366
+- 0:0:0:0:0:0:0:1 - - [05/Jun/2021:13:16:54 +0800] GET /amarpack/home HTTP/1.1 200 1390 0.008
+- 0:0:0:0:0:0:0:1 - - [05/Jun/2021:13:17:39 +0800] GET /amarpack/home HTTP/1.1 200 1421 0.005

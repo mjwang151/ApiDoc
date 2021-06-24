@@ -43,6 +43,10 @@ public class TestExportDoc {
 	@Qualifier("IconTemplate")
 	DocTemplate IconTemplate;
 
+	@Autowired
+	@Qualifier("NoDemoCommonTemplate")
+	DocTemplate nodemocommonTemplate;
+
     @org.junit.jupiter.api.Test
     public void test(){
      OutputStreamWriter pw = null;//定义一个流
@@ -59,7 +63,7 @@ public class TestExportDoc {
 			Writer writer = new OutputStreamWriter(new FileOutputStream(file),"utf-8");
 			apiDocBuilder.setCom_type("data");
 			JSONObject tojson = apiDocBuilder.build(transcode).tojson();
-			Template t = IconTemplate.getTemplate();
+			Template t = nodemocommonTemplate.getTemplate();
 			t.process(tojson, writer);
 			if(transcode.contains(",")){
 				PdfCore.parse(file.getAbsolutePath(),"F://ApiDoc"+ new SimpleDateFormat("yyyyMMdd").format(new Date()) +".pdf");

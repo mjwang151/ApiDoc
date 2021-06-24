@@ -11,19 +11,17 @@
 </head>
 
 
-
-
 <link rel="stylesheet" th:href="@{layui/css/layui.css}" media="all"/>
 <script th:src="@{layui/layui.js}" charset="utf-8"></script>
 <script th:src="@{jquery/jquery-3.4.1.js}" charset="utf-8"></script>
 <body>
+<div style="height: 100%">
+    <div th:include="main :: headmenu" style="height: 20%"></div>
 
-<div th:include="main :: headmenu"></div>
-
-
-<iframe src='http://www.baidu.com' frameborder="0" id="barframe" style="width: 100%; height: 100%; border-radius: 2px;"></iframe>
-
-
-
+    <div style="height: 80%">
+        <iframe src='http://192.168.61.102:50401/analysis/dashboard/show/ac3b768ca178686123f4/' frameborder="0"
+                id="barframe" style="width: 100%; height: 900px; border-radius: 2px;" allowfullscreen="true"></iframe>
+    </div>
+<div>
 </body>
 </html>

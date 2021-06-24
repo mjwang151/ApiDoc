@@ -7,6 +7,7 @@ import com.amarsoft.bean.DownloadDocBean;
 import com.amarsoft.exportdoc.ApiDocBuilder;
 import com.amarsoft.exportdoc.ApiDocExportService;
 import com.amarsoft.exportdoc.template.DocTemplate;
+import com.amarsoft.exportdoc.template.NoDemoCommonTemplate;
 import com.amarsoft.exportpdf.PdfCore;
 import freemarker.template.Template;
 import io.swagger.annotations.Api;
@@ -44,7 +45,9 @@ public class HomeController {
 	@Autowired
 	@Qualifier("IconTemplate")
 	DocTemplate IconTemplate;
-
+	@Autowired
+	@Qualifier("NoDemoCommonTemplate")
+	DocTemplate nodemocommonTemplate;
 
 	/**
 	 * 自动生成文档
@@ -78,7 +81,12 @@ public class HomeController {
 			log.info("开始生成接口文档："+transcode);
 			apiDocBuilder.setCom_type(downloadDocBean.getCompany());
 			JSONObject tojson = apiDocBuilder.build(transcode).tojson();
-			Template t = IconTemplate.getTemplate();
+			Template t = null;
+			if(downloadDocBean.getTemplateType() != null && downloadDocBean.getTemplateType().equals("nodemo")){
+				t = nodemocommonTemplate.getTemplate();
+			}else{
+				t = IconTemplate.getTemplate();
+			}
 			t.process(tojson, writer);
 		} catch (Exception e) {
 			e.printStackTrace();
