@@ -5103,29 +5103,6 @@
 							</w:rPr>
 						</w:pPr>
 					</w:p>
-					<w:p w:rsidR="00D22AE7" w:rsidRDefault="00D22AE7">
-						<w:pPr>
-							<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
-							<w:rPr>
-								<w:rFonts w:ascii="宋体" w:hAnsi="宋体"/>
-								<w:szCs w:val="21"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:hint="eastAsia"/>
-								<w:szCs w:val="21"/>
-							</w:rPr>
-							<w:t>字段结构</w:t>
-						</w:r>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="宋体" w:hAnsi="宋体"/>
-								<w:szCs w:val="21"/>
-							</w:rPr>
-							<w:t>附表：</w:t>
-						</w:r>
-					</w:p>
 					<!-- 附属表-->
 <#list api.output.table2 as output2>
 					<w:tbl>
