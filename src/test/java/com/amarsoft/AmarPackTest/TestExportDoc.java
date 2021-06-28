@@ -51,8 +51,8 @@ public class TestExportDoc {
     public void test(){
      OutputStreamWriter pw = null;//定义一个流
 		try {
-			String transcode = "R1104";
-
+			String transcode = "R1105,R11D05,R11C53,R1501,R227,R228,R230,R301V2,R701V3,R702V3,R703V3,R704V3,R705V3,R706V3,R707V3,R709,R801V2,R802V2,R803V2,R804V2,R805V2,R806V2,R807V2,R808V2,R1201,R1206V2,R1207,R217,R215,R203V2,R329V2,R326,R11D68,B301V2,B203,B215,B217,B801,B802,B803,B804,B805,B806,B807,B808,B701,B702,B703,B704,B705,B706,B707,B1201,B118,B1166,B11B66,B407,B408,J1301,J1302,J1303";
+//			String transcode ="R1206V2";
 			//1:使用File类创建一个要操作的文件路径
 			File file = null;
 			if(transcode.contains(",")){
@@ -63,7 +63,7 @@ public class TestExportDoc {
 			Writer writer = new OutputStreamWriter(new FileOutputStream(file),"utf-8");
 			apiDocBuilder.setCom_type("data");
 			JSONObject tojson = apiDocBuilder.build(transcode).tojson();
-			Template t = nodemocommonTemplate.getTemplate();
+			Template t = IconTemplate.getTemplate();
 			t.process(tojson, writer);
 			if(transcode.contains(",")){
 				PdfCore.parse(file.getAbsolutePath(),"F://ApiDoc"+ new SimpleDateFormat("yyyyMMdd").format(new Date()) +".pdf");

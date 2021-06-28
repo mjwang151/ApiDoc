@@ -50,7 +50,10 @@ public class InnerMessageUtil {
      * 返回data：输入对象
      */
     public static final String DATA_OUTPUT = "output";
-
+    /**
+     * 返回data：输出子对象
+     */
+    public static final String DATA_INPUT_MAP = "inputmap";
     /**
      * 返回data：输出子对象
      */
@@ -127,8 +130,10 @@ public class InnerMessageUtil {
         List<JSONObject> inputArr = new ArrayList<JSONObject>();
         List<JSONObject> outArr = new ArrayList<JSONObject>();
         Map<String, List<JSONObject>> map_outArr = new LinkedHashMap<String, List<JSONObject>>();
+        Map<String, List<JSONObject>> map_inArr = new LinkedHashMap<String, List<JSONObject>>();
 
         Map<String, AssetApiParams> order_map = new LinkedHashMap<String, AssetApiParams>(); //用来排序
+        Map<String, AssetApiParams> order_map_in = new LinkedHashMap<String, AssetApiParams>(); //用来排序
 
         if (list != null) {
             for (int i = 0; i < list.size(); i++) {
@@ -139,16 +144,17 @@ public class InnerMessageUtil {
 
                 if (needinput.equals("REQUEST")) {
                     if (StringUtils.isNotBlank(paranentId)) {
-                        if (map_outArr.containsKey(paranentId)) {
-                            List<JSONObject> ll = map_outArr.get(paranentId);
+                        if (map_inArr.containsKey(paranentId)) {
+                            List<JSONObject> ll = map_inArr.get(paranentId);
                             ll.add(combineTran(biz, serviceBiz));
                         } else {
                             List<JSONObject> ll = new ArrayList<JSONObject>();
                             ll.add(combineTran(biz, serviceBiz));
-                            map_outArr.put(paranentId, ll);
+                            map_inArr.put(paranentId, ll);
                         }
                     } else {
                         inputArr.add(combineTran(biz, serviceBiz));
+                        order_map_in.put(biz.getParamId(), biz);
                     }
                 }
                 if (needinput.equals("RESPONSE")) {
@@ -195,6 +201,22 @@ public class InnerMessageUtil {
             }
         }).collect(Collectors.toList());
 
+        //chuli shuru
+        Map<String, List<JSONObject>> map_inArr2 = new LinkedHashMap<String, List<JSONObject>>();
+
+        order_map_in = order_map_in.entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue())
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
+                        (oldValue, newValue) -> oldValue, LinkedHashMap::new));
+
+        int countin = 0;
+        for (Map.Entry<String, AssetApiParams> entry : order_map_in.entrySet()) {
+            countin++;
+            combineOutArr("2." + countin, "", combineTran(entry.getValue(), serviceBiz), map_inArr, map_inArr2);
+        }
 
         Map<String, List<JSONObject>> map_outArr2 = new LinkedHashMap<String, List<JSONObject>>();
 
@@ -211,10 +233,12 @@ public class InnerMessageUtil {
             count++;
             combineOutArr("2." + count, "", combineTran(entry.getValue(), serviceBiz), map_outArr, map_outArr2);
         }
+
+
         demoDataJO.put(DATA_INPUT, inputArr);
         demoDataJO.put(DATA_OUTPUT, outArr);
         demoDataJO.put(DATA_OUTPUT_MAP, map_outArr2);
-
+        demoDataJO.put(DATA_INPUT_MAP, map_inArr2);
         demoDataJO.put(DATA_MESSAGE_INPUT, serviceBiz.getReqSample());
         demoDataJO.put(DATA_MESSAGE_OUTPUT, serviceBiz.getRespSample());
 

@@ -50,6 +50,7 @@ public class ApiDocBuilder {
 		for (int i = 0; i < list.size(); i++) {
 			doc.getBody().getApilist().add(buildApiDef(list.get(i), index));
 		}
+		System.out.println(doc.tojson().toString());
 		return doc;
 	}
 
@@ -87,7 +88,8 @@ public class ApiDocBuilder {
 			input.setTitle("输入参数");
 			input.setDemo(special_string(demoMessage.getString("demoinput") == null?"":demoMessage.getString("demoinput")));
 			JSONArray inputArr = demoMessage.getJSONArray("input");
-			buildApiInput(input, inputArr);
+			Map<String,List<JSONObject>> intputArr2 = (Map<String,List<JSONObject>>) demoMessage.get("inputmap");
+			buildApiInput(input, inputArr,intputArr2);
 			api.setInput(input);
 
 			ApiSegDef output = new ApiSegDef();
@@ -110,7 +112,7 @@ public class ApiDocBuilder {
 	 * @param input
 	 * @param inputArr
 	 */
-	public static void buildApiInput(ApiSegDef input, JSONArray inputArr) {
+	public static void buildApiInput(ApiSegDef input, JSONArray inputArr,Map<String,List<JSONObject>> intputArr2) {
 		ApiTableDef inputdef = new ApiTableDef();
 		for(int i=0;i<inputArr.size();i++) {
 			JSONObject inputjo = inputArr.getJSONObject(i);
@@ -124,6 +126,32 @@ public class ApiDocBuilder {
 			inputdef.getCollist().add(column);
 		}
 		input.setTable(inputdef);
+		Map<String, EnhanceApiTableDef> map = new LinkedHashMap<String, EnhanceApiTableDef>();
+
+		for (Entry<String,List<JSONObject>> entry : intputArr2.entrySet()) {
+			String key = entry.getKey();
+			if(StringUtils.isEmpty(key)) continue;
+			List<JSONObject> valuelist = entry.getValue();
+			EnhanceApiTableDef endef = new EnhanceApiTableDef();
+			endef.setDefName(key);
+			for (int k = 0; k < valuelist.size(); k++) {
+				EnhanceApiColumnDef column = new EnhanceApiColumnDef();
+				JSONObject jo1 = valuelist.get(k);
+				column.setId(JSONTools.getString(jo1, "orderno",""));
+				column.setName(JSONTools.getString(jo1, "intf",""));
+				column.setDesc(JSONTools.getString(jo1, "intfname",""));
+				column.setNeed(JSONTools.getString(jo1, "needtype",""));
+				column.setType(JSONTools.getString(jo1, "intftype",""));
+				column.setComment(JSONTools.getString(jo1, "remark",""));
+
+				endef.getCollist().add(column);
+			}
+			map.put(key, endef);
+		}
+		for(String key : map.keySet()) {
+			input.getEnhanceTable().add(map.get(key));
+		}
+
 	}
 
 	/**TODO 暂时使用测试案例
