@@ -22,15 +22,14 @@ import java.util.Map;
 
 @Component
 @Slf4j
-public class DataBaseConfig  implements CommandLineRunner {
+public class DataBaseConfig {
 
     public static volatile Map<String, DruidDataSource> dataSourceMap = new HashMap<String, DruidDataSource>();
 
     @Autowired
     DataBaseConfigImpl docServiceImpl;
 
-    @Override
-    public void run(String... args) throws Exception {
+    public void run() throws Exception {
         log.info("----开始加载数据源-----，当前环境为："+ApplicationContextUtils.getProperty("spring.profiles.active"));
         List<DataBaseBean> allconfig = docServiceImpl.getAllconfig(ApplicationContextUtils.getProperty("spring.profiles.active"));
         allconfig.stream().forEach(v->{
@@ -38,15 +37,30 @@ public class DataBaseConfig  implements CommandLineRunner {
             log.info("加载数据源："+v.getDbname()+"完成...");
         });
     }
-    public static Connection getConn(String dbname) throws SQLException {
-        if(dataSourceMap.containsKey(dbname)){
-            return dataSourceMap.get(dbname).getConnection();
-        }else{
-            return null;
-        }
+    public static void getOneDb(String name) throws Exception {
+        DataBaseConfigImpl docServiceImpl = ApplicationContextUtils.getBean(DataBaseConfigImpl.class);
+        log.info("----开始加载数据源-----，当前环境为："+ApplicationContextUtils.getProperty("spring.profiles.active"));
+        DataBaseBean oneconfig = docServiceImpl.getOneconfig(ApplicationContextUtils.getProperty("spring.profiles.active"),name);
+        dataSourceMap.put(oneconfig.getDbname(),getJdbcTemplate(oneconfig));
+        log.info("加载数据源："+oneconfig.getDbname()+"完成...");
     }
 
-    private DruidDataSource getJdbcTemplate(DataBaseBean db) {
+
+    public static Connection getConn(String dbname) {
+        try {
+            if(dataSourceMap.containsKey(dbname)){
+                return dataSourceMap.get(dbname).getConnection();
+            }else{
+                getOneDb(dbname);
+                return dataSourceMap.get(dbname).getConnection();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    private static DruidDataSource getJdbcTemplate(DataBaseBean db) {
         DruidDataSource dataSource = new DruidDataSource();
         dataSource.setUrl(db.getUrl());
         dataSource.setUsername(db.getUsername());

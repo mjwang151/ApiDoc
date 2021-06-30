@@ -17,4 +17,10 @@ public interface DataBaseConfigMapper {
      */
     List<DataBaseBean> getAllconfig(String environment);
 
+
+    /**
+     * 查询所有
+     * @return
+     */
+    DataBaseBean getOneconfig(String environment,String dbname);
 }

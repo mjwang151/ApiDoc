@@ -1,36 +1,97 @@
-2021-06-24 19:14:06.530 [main] INFO  com.amarsoft.AmarPackTest.TestExportDoc - Starting TestExportDoc using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 27068 (started by mjwang in H:\github\ApiDoc)
-2021-06-24 19:14:06.556 [main] INFO  com.amarsoft.AmarPackTest.TestExportDoc - The following profiles are active: dev
-2021-06-24 19:14:08.069 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
-2021-06-24 19:14:08.570 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-06-24 19:14:08.823 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-24 19:14:09.010 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2021-06-24 19:14:09.173 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2021-06-24 19:14:09.196 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-06-24 19:14:09.220 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-06-24 19:14:09.420 [main] INFO  com.amarsoft.AmarPackTest.TestExportDoc - Started TestExportDoc in 3.245 seconds (JVM running for 4.273)
-2021-06-24 19:14:09.421 [main] INFO  com.amarsoft.config.DataBaseConfig - ----开始加载数据源-----，当前环境为：dev
-2021-06-24 19:14:09.441 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-06-24 19:14:09.724 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-06-24 19:14:09.990 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：amar_cr完成...
-2021-06-24 19:14:09.990 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：amar_data完成...
-2021-06-24 19:14:09.990 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：bdfin完成...
-2021-06-24 19:14:09.990 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：crsbjt完成...
-2021-06-24 19:14:09.990 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：crservice完成...
-2021-06-24 19:14:09.990 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：cr_hub完成...
-2021-06-24 19:14:09.991 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：hubserviceapilog完成...
-2021-06-24 19:14:09.991 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：impala_findw完成...
-2021-06-24 19:14:09.991 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：jlfinance完成...
-2021-06-24 19:14:09.991 [main] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
-2021-06-24 19:14:09.991 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：RTRP完成...
-2021-06-24 19:14:10.209 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-2021-06-24 19:14:10.217 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-2021-06-24 19:14:10.877 [main] INFO  com.amarsoft.exportpdf.PdfCore - 开始转换...
-2021-06-24 19:14:12.996 [main] INFO  com.amarsoft.exportpdf.PdfCore - 打开文件: F:\R1104.doc
-2021-06-24 19:14:14.340 [main] INFO  com.amarsoft.exportpdf.PdfCore - 另存为: F://R1104.pdf
-2021-06-24 19:14:16.292 [main] INFO  com.amarsoft.exportpdf.PdfCore - 转换成功，用时：5415ms
-2021-06-24 19:14:16.295 [main] INFO  com.amarsoft.exportpdf.PdfCore - 导出pdf成功！！!!!!
-2021-06-24 19:14:16.313 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2021-06-24 19:14:16.315 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-2021-06-24 19:14:16.328 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
-2021-06-24 19:14:16.329 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2021-06-24 19:14:16.336 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-06-30 16:34:48.178 [main] INFO  com.amarsoft.AmarPackTest.PdfToWord2 - Starting PdfToWord2 using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 11028 (started by mjwang in H:\github\ApiDoc)
+2021-06-30 16:34:48.182 [main] INFO  com.amarsoft.AmarPackTest.PdfToWord2 - The following profiles are active: dev
+2021-06-30 16:34:49.612 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-06-30 16:34:50.137 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-30 16:34:50.375 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-30 16:34:50.541 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-06-30 16:34:50.711 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-06-30 16:34:50.731 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-30 16:34:50.753 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-30 16:34:50.955 [main] INFO  com.amarsoft.AmarPackTest.PdfToWord2 - Started PdfToWord2 in 3.126 seconds (JVM running for 5.008)
+2021-06-30 16:34:50.957 [main] INFO  com.amarsoft.config.DataBaseConfig - ----开始加载数据源-----，当前环境为：dev
+2021-06-30 16:34:50.983 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-30 16:34:51.219 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-30 16:34:51.342 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：amar_cr完成...
+2021-06-30 16:34:51.342 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：amar_data完成...
+2021-06-30 16:34:51.342 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：bdfin完成...
+2021-06-30 16:34:51.342 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：crsbjt完成...
+2021-06-30 16:34:51.342 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：crservice完成...
+2021-06-30 16:34:51.342 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：cr_hub完成...
+2021-06-30 16:34:51.342 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：hubserviceapilog完成...
+2021-06-30 16:34:51.342 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：impala_findw完成...
+2021-06-30 16:34:51.342 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：jlfinance完成...
+2021-06-30 16:34:51.342 [main] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2021-06-30 16:34:51.342 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：RTRP完成...
+2021-06-30 16:34:58.092 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-30 16:34:58.095 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-06-30 16:34:58.106 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-06-30 16:56:29.011 [main] INFO  com.amarsoft.AmarPackTest.Test - Starting Test using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 26820 (started by mjwang in H:\github\ApiDoc)
+2021-06-30 16:56:29.012 [main] INFO  com.amarsoft.AmarPackTest.Test - The following profiles are active: dev
+2021-06-30 16:56:30.214 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-06-30 16:56:30.710 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-30 16:56:30.939 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-30 16:56:31.088 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-06-30 16:56:31.221 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-06-30 16:56:31.240 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-30 16:56:31.261 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-30 16:56:31.458 [main] INFO  com.amarsoft.AmarPackTest.Test - Started Test in 2.823 seconds (JVM running for 3.658)
+2021-06-30 16:56:31.613 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-30 16:57:18.820 [main] INFO  com.amarsoft.AmarPackTest.Test - Starting Test using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 27348 (started by mjwang in H:\github\ApiDoc)
+2021-06-30 16:57:18.821 [main] INFO  com.amarsoft.AmarPackTest.Test - The following profiles are active: dev
+2021-06-30 16:57:20.027 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-06-30 16:57:20.519 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-30 16:57:20.753 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-30 16:57:20.896 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-06-30 16:57:21.036 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-06-30 16:57:21.056 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-30 16:57:21.079 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-30 16:57:21.283 [main] INFO  com.amarsoft.AmarPackTest.Test - Started Test in 2.851 seconds (JVM running for 3.706)
+2021-06-30 16:57:21.471 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-30 17:00:34.769 [main] INFO  com.amarsoft.AmarPackTest.Test - Starting Test using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 14844 (started by mjwang in H:\github\ApiDoc)
+2021-06-30 17:00:34.770 [main] INFO  com.amarsoft.AmarPackTest.Test - The following profiles are active: dev
+2021-06-30 17:00:36.004 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-06-30 17:00:36.485 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-30 17:00:36.721 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-30 17:00:36.883 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-06-30 17:00:37.022 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-06-30 17:00:37.042 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-30 17:00:37.065 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-30 17:00:37.262 [main] INFO  com.amarsoft.AmarPackTest.Test - Started Test in 2.883 seconds (JVM running for 4.003)
+2021-06-30 17:00:37.422 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-30 17:00:37.606 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-30 17:00:37.671 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-30 17:00:37.673 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-06-30 17:00:37.679 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-06-30 17:01:19.763 [main] INFO  com.amarsoft.AmarPackTest.Test - Starting Test using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 23952 (started by mjwang in H:\github\ApiDoc)
+2021-06-30 17:01:19.764 [main] INFO  com.amarsoft.AmarPackTest.Test - The following profiles are active: dev
+2021-06-30 17:01:21.340 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-06-30 17:01:21.918 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-30 17:01:22.214 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-30 17:01:22.418 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-06-30 17:01:22.607 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-06-30 17:01:22.630 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-30 17:01:22.656 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-30 17:01:22.879 [main] INFO  com.amarsoft.AmarPackTest.Test - Started Test in 3.533 seconds (JVM running for 4.581)
+2021-06-30 17:01:23.068 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-30 17:01:23.281 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-30 17:01:23.352 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-30 17:01:23.354 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-06-30 17:01:23.361 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-06-30 17:03:12.572 [main] INFO  com.amarsoft.AmarPackTest.Test - Starting Test using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 24828 (started by mjwang in H:\github\ApiDoc)
+2021-06-30 17:03:12.573 [main] INFO  com.amarsoft.AmarPackTest.Test - The following profiles are active: dev
+2021-06-30 17:03:14.057 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-06-30 17:03:14.611 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-30 17:03:14.894 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-30 17:03:15.108 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-06-30 17:03:15.284 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-06-30 17:03:15.305 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-30 17:03:15.335 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-30 17:03:15.545 [main] INFO  com.amarsoft.AmarPackTest.Test - Started Test in 3.382 seconds (JVM running for 4.445)
+2021-06-30 17:03:15.740 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-30 17:03:15.947 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-30 17:03:15.990 [main] INFO  com.amarsoft.config.DataBaseConfig - ----开始加载数据源-----，当前环境为：dev
+2021-06-30 17:03:16.008 [main] INFO  com.amarsoft.config.DataBaseConfig - 加载数据源：amar_cr完成...
+2021-06-30 17:03:16.086 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-06-30 17:03:16.110 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-30 17:03:16.112 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-06-30 17:03:16.121 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

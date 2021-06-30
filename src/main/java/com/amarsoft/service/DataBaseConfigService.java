@@ -11,6 +11,7 @@ public interface DataBaseConfigService {
      */
     List<DataBaseBean> getAllconfig(String environment);
 
+    DataBaseBean getOneconfig(String environment,String dbname);
 
 
 }

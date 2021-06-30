@@ -106,6 +106,14 @@
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/jacob.jar</systemPath>
 		</dependency>
+		<dependency>
+			<groupId>com.aspose.words</groupId>
+			<artifactId>aspose-words-jdk16</artifactId>
+			<version>15.8.0-jdk16</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/aspose-words-15.8.0-jdk16.jar</systemPath>
+		</dependency>
+
 	</dependencies>
 
 	<build>

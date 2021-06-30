@@ -32,6 +32,11 @@ public class DataBaseConfigImpl implements DataBaseConfigService {
         return dataBaseConfigMapper.getAllconfig(environment);
     }
 
+    @Override
+    public DataBaseBean getOneconfig(String environment, String dbname) {
+        return dataBaseConfigMapper.getOneconfig(environment, dbname);
+    }
+
     /**
      * 获取字段结构
      * @param jo
