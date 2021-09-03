@@ -1,5 +1,6 @@
 package com.amarsoft.exportexcel.request;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.amarsoft.exportdoc.util.JSONTools;
@@ -39,7 +40,9 @@ public class QueryAndExport {
         if(jsonArray.size() > 0){
             new TransResultToExcel(TemplateFactory.getTemplate(tmp)).parseJSONToExcel(path+"/data/" +transcode+".xlsx",jsonArray, transcode);
             return path+"/data/" +transcode+".xlsx";
+        }else{
+            new TransResultToExcel(TemplateFactory.getTemplate(tmp)).parseJSONToExcel(path+"/data/" +transcode+".xlsx",new JSONArray(), transcode);
+            return path+"/data/" +transcode+".xlsx";
         }
-        return "";
     }
 }

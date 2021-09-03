@@ -830,3 +830,447 @@ java.lang.IllegalArgumentException: Invalid character found in the request targe
 2021-09-03 11:16:54.159 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-09-03 11:16:54.159 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2021-09-03 11:16:54.160 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-09-03 11:22:53.233 [main] INFO  com.amarsoft.App - Starting App using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 9132 (H:\github\ApiDoc\target\classes started by mjwang in H:\github\ApiDoc)
+2021-09-03 11:22:53.234 [main] INFO  com.amarsoft.App - The following profiles are active: dev
+2021-09-03 11:22:54.340 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-09-03 11:22:54.348 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-03 11:22:54.348 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-03 11:22:54.348 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-03 11:22:54.412 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring embedded WebApplicationContext
+2021-09-03 11:22:54.413 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1142 ms
+2021-09-03 11:22:54.624 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-09-03 11:22:54.896 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-03 11:22:54.946 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-03 11:22:55.033 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-09-03 11:22:55.088 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-09-03 11:22:55.107 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/amarpack'
+2021-09-03 11:22:55.107 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-09-03 11:22:55.120 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-09-03 11:22:55.138 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-09-03 11:22:55.286 [main] INFO  com.amarsoft.App - Started App in 2.396 seconds (JVM running for 2.837)
+2021-09-03 11:22:56.663 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-03 11:22:56.663 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-03 11:22:56.664 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-09-03 11:23:20.278 [http-nio-8080-exec-13] INFO  com.amarsoft.exportexcel.request.QueryAndExport - req param:{"transcode":"R11C53","source":"EDS","params":{"nametype":"1","Name":"莱芜泰丰食品有限公司2"},"userid":"11","orgid":"EDS","account":"EDS"}
+2021-09-03 11:23:20.699 [http-nio-8080-exec-13] INFO  com.amarsoft.exportexcel.request.QueryAndExport - response data:[{"basicList":[{"enterpriseName":"莱芜泰丰食品有限公司2","creditCode":"91130185104360588P","regNo":"130000000013387","enterpriseType":"有限责任公司(自然人投资或控股)","frName":"张朝峰","regCap":"200.000000","regCapCur":"人民币元","recCap":"","esDate":"1995-02-14","openFrom":"1995-02-14","openTo":"2025-02-14","regOrg":"鹿泉区市场监督管理局","apprDate":"","enterpriseStatus":"在营（开业）","cancelDate":"2014-10-26","revokeDate":"2014-10-19","address":"石家庄市鹿泉开发区昌盛大街17号","operateScope":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售；水果、蔬菜的批发、零售、房屋出租、仓储；（以下限分支机构凭许可证在有效期内经营）预包装食品的批发与零售、酒店管理；文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务；设计、制作、代理、发布各类广告、供应链管理、仓储运输物流管理、物流园区管理、货物运输管理、供应链管理咨询；普通货运、货物专用运输（集装箱、冷藏保鲜设备）。（依法须经批准的项目，经相关部门批准后方可开展经营活动）","abuItem":"制造方正电子出版系统","industryCode":"","industryName":"","industryPhyCode":"","industryPhyName":"","anCheYear":"","oriRegNo":"1300001002875","telephone":"","addrDistrict":"","enterpriseHisName":"北京莱芜泰丰食品有限公司2","regOrgProvince":"","regOrgCity":"","regOrgDistrict":"","email":"","empNum":"","regOrgCode":"","enterpriseTypeCode":"","enterpriseEngName":""}],"shareholderList":[{"shareholderName":"张朝峰","shareholderType":"","subConAm":"180.000000","subConCur":"人民币元","subConForm":"货币","fundedRatio":"90.00%","subConDate":"1995-02-13","country":"中国"},{"shareholderName":"雷造民","shareholderType":"","subConAm":"20.000000","subConCur":"人民币元","subConForm":"","fundedRatio":"10.00%","subConDate":"1995-02-13","country":"中国"}],"personList":[{"name":"张朝峰","position":"董事长","enterpriseName":"莱芜泰丰食品有限公司2","isFrName":"","personAmount":"4"},{"name":"雷造民","position":"董事","enterpriseName":"莱芜泰丰食品有限公司2","isFrName":"","personAmount":"4"},{"name":"李永强","position":"董事","enterpriseName":"莱芜泰丰食品有限公司2","isFrName":"","personAmount":"4"},{"name":"张宪军","position":"监事","enterpriseName":"莱芜泰丰食品有限公司2","isFrName":"","personAmount":"4"}],"entInvItemList":[{"relEntName":"沧县厚朴教育服务有限公司","creditCode":"7897777","regNo":"130921000006388","entType":"其他有限责任公司","frName":"常金","regCap":"52.600000","regCapCur":"人民币元","subConAm":"25.000000","subConCur":"人民币元","fundedRatio":"47.53%","conForm":"货币","esDate":"2002-06-10","regOrg":"沧县工商行政管理局","entStatus":"吊销，未注销","cancelDate":"1995-02-19","revokeDate":"2008-01-11","regOrgCode":"130921","binvAmount":"9"},{"relEntName":"河北教育厚朴旅行社有限责任公司","creditCode":"9113010077132306XW","regNo":"130000000012152","entType":"其他有限责任公司","frName":"张朝峰","regCap":"300.000000","regCapCur":"人民币元","subConAm":"201.000000","subConCur":"人民币元","fundedRatio":"67.00%","conForm":"货币","esDate":"2005-02-05","regOrg":"新华区工商行政管理局","entStatus":"在营（开业）","cancelDate":"","revokeDate":"","regOrgCode":"130105","binvAmount":"9"},{"relEntName":"河北厚德在屋校园服务有限责任公司","creditCode":"9113010077132306XW","regNo":"130100000018272","entType":"有限责任公司(自然人投资或控股的法人独资)","frName":"雷造民","regCap":"300.000000","regCapCur":"人民币元","subConAm":"300.000000","subConCur":"人民币元","fundedRatio":"100.00%","conForm":"货币","esDate":"2007-08-28","regOrg":"石家庄市工商行政管理局","entStatus":"吊销，未注销","cancelDate":"","revokeDate":"2012-04-09","regOrgCode":"130100","binvAmount":"9"},{"relEntName":"鹿泉市厚朴新科教工程技术有限责任公司","creditCode":"9113010077132306XW","regNo":"130185000009980","entType":"有限责任公司(自然人投资或控股的法人独资)","frName":"雷造民","regCap":"100.000000","regCapCur":"人民币元","subConAm":"100.000000","subConCur":"人民币元","fundedRatio":"100.00%","conForm":"货币","esDate":"2008-07-31","regOrg":"鹿泉区工商行政管理局","entStatus":"吊销，未注销","cancelDate":"","revokeDate":"2010-02-02","regOrgCode":"130185","binvAmount":"9"},{"relEntName":"鹿泉厚朴科技有限责任公司","creditCode":"91130185768149494C","regNo":"130185000000111","entType":"其他有限责任公司","frName":"张朝峰","regCap":"500.000000","regCapCur":"人民币元","subConAm":"490.000000","subConCur":"人民币元","fundedRatio":"98.00%","conForm":"货币","esDate":"2004-12-03","regOrg":"鹿泉区工商行政管理局","entStatus":"在营（开业）","cancelDate":"","revokeDate":"","regOrgCode":"130185","binvAmount":"9"},{"relEntName":"高碑店市育兴校产服务有限责任公司","creditCode":"9113010077132306XW","regNo":"1306842000388","entType":"有限责任公司(自然人投资或控股)","frName":"徐东明","regCap":"50.000000","regCapCur":"人民币元","subConAm":"5.000000","subConCur":"人民币元","fundedRatio":"10.00%","conForm":"货币","esDate":"2004-09-06","regOrg":"高碑店市工商行政管理局","entStatus":"注销","cancelDate":"2008-04-11","revokeDate":"","regOrgCode":"130684","binvAmount":"9"},{"relEntName":"河北厚朴教育资源有限责任公司","creditCode":"9113010077132306XW","regNo":"1301001001513","entType":"其他有限责任公司","frName":"付刚","regCap":"50.000000","regCapCur":"人民币元","subConAm":"20.000000","subConCur":"人民币元","fundedRatio":"40.00%","conForm":"货币","esDate":"2002-08-08","regOrg":"石家庄市工商行政管理局","entStatus":"吊销，未注销","cancelDate":"","revokeDate":"2009-04-17","regOrgCode":"130100","binvAmount":"9"},{"relEntName":"石家庄厚朴冷配农业科技有限公司","creditCode":"91130185MA09L8140Q","regNo":"130185000062706","entType":"其他有限责任公司","frName":"张东","regCap":"500.000000","regCapCur":"人民币元","subConAm":"25.000000","subConCur":"人民币元","fundedRatio":"5.00%","conForm":"货币","esDate":"2017-12-26","regOrg":"鹿泉区工商行政管理局","entStatus":"注销","cancelDate":"2018-08-23","revokeDate":"","regOrgCode":"130185","binvAmount":"9"},{"relEntName":"河北厚朴尔雅文化传播有限公司","creditCode":"91130185MA09L8BYX6","regNo":"130185000062714","entType":"其他有限责任公司","frName":"师红涛","regCap":"1000.000000","regCapCur":"人民币元","subConAm":"50.000000","subConCur":"人民币元","fundedRatio":"5.00%","conForm":"货币","esDate":"2017-12-26","regOrg":"鹿泉区工商行政管理局","entStatus":"注销","cancelDate":"2018-08-23","revokeDate":"","regOrgCode":"130185","binvAmount":"9"}],"frInvList":[{"relEntName":"石家庄尧合蔬菜综合批发市场管理有限公司","creditCode":"911101080592106008","regNo":"130100000509359","entType":"有限责任公司(自然人投资或控股)","frName":"张振国","regCap":"6000.000000","regCapCur":"人民币元","subConAm":"200.000000","subConCur":"人民币元","fundedRatio":"3.33%","conForm":"货币","esDate":"2014-05-22","regOrg":"石家庄市工商行政管理局","entStatus":"吊销，未注销","cancelDate":"2018-04-29","revokeDate":"2018-04-28","regOrgCode":"130100","pinvAmount":"4"},{"relEntName":"鹿泉厚朴科技有限责任公司","creditCode":"91130185768149494C","regNo":"130185000000111","entType":"其他有限责任公司","frName":"张朝峰","regCap":"500.000000","regCapCur":"人民币元","subConAm":"10.000000","subConCur":"人民币元","fundedRatio":"2.00%","conForm":"","esDate":"2004-12-03","regOrg":"鹿泉区工商行政管理局","entStatus":"在营（开业）","cancelDate":"","revokeDate":"","regOrgCode":"130185","pinvAmount":"4"},{"relEntName":"石家庄百纳商贸有限公司","creditCode":"","regNo":"1301032001026","entType":"有限责任公司(自然人投资或控股)","frName":"张朝峰","regCap":"50.000000","regCapCur":"人民币元","subConAm":"20.000000","subConCur":"人民币元","fundedRatio":"40.00%","conForm":"货币","esDate":"2003-09-19","regOrg":"长安区工商行政管理局","entStatus":"注销","cancelDate":"2006-06-20","revokeDate":"","regOrgCode":"130102","pinvAmount":"4"},{"relEntName":"河北厚朴冷链物流有限公司","creditCode":"91130185068119147Q","regNo":"130185000020643","entType":"有限责任公司(自然人独资)","frName":"张朝峰","regCap":"1000.000000","regCapCur":"人民币元","subConAm":"1000.000000","subConCur":"人民币元","fundedRatio":"100.00%","conForm":"货币","esDate":"2013-05-08","regOrg":"鹿泉区市场监督管理局","entStatus":"在营（开业）","cancelDate":"","revokeDate":"","regOrgCode":"130185","pinvAmount":"4"}],"frPositionList":[{"relEntName":"河北教育厚朴旅行社有限责任公司","regNo":"130000000012152","entType":"其他有限责任公司","frName":"张朝峰","regCap":"300.000000","regCapCur":"人民币元","esDate":"2005-02-05","regOrg":"新华区工商行政管理局","entStatus":"在营（开业）","cancelDate":"2014-10-17","revokeDate":"2014-10-16","position":"执行董事","isFrName":"是","regOrgCode":"130105","ppvAmount":"5"},{"relEntName":"鹿泉厚朴科技有限责任公司","regNo":"130185000000111","entType":"其他有限责任公司","frName":"张朝峰","regCap":"500.000000","regCapCur":"人民币元","esDate":"2004-12-03","regOrg":"鹿泉区工商行政管理局","entStatus":"在营（开业）","cancelDate":"","revokeDate":"","position":"董事长","isFrName":"是","regOrgCode":"130185","ppvAmount":"5"},{"relEntName":"石家庄百纳商贸有限公司","regNo":"1301032001026","entType":"有限责任公司(自然人投资或控股)","frName":"张朝峰","regCap":"50.000000","regCapCur":"人民币元","esDate":"2003-09-19","regOrg":"长安区工商行政管理局","entStatus":"注销","cancelDate":"2006-06-20","revokeDate":"","position":"执行董事","isFrName":"是","regOrgCode":"130102","ppvAmount":"5"},{"relEntName":"河北厚朴冷链物流有限公司","regNo":"130185000020643","entType":"有限责任公司(自然人独资)","frName":"张朝峰","regCap":"1000.000000","regCapCur":"人民币元","esDate":"2013-05-08","regOrg":"鹿泉区市场监督管理局","entStatus":"在营（开业）","cancelDate":"","revokeDate":"","position":"执行董事","isFrName":"是","regOrgCode":"130185","ppvAmount":"5"},{"relEntName":"河北厚朴冷链物流有限公司","regNo":"130185000020643","entType":"有限责任公司(自然人独资)","frName":"张朝峰","regCap":"1000.000000","regCapCur":"人民币元","esDate":"2013-05-08","regOrg":"鹿泉区市场监督管理局","entStatus":"在营（开业）","cancelDate":"","revokeDate":"","position":"总经理","isFrName":"是","regOrgCode":"130185","ppvAmount":"5"}],"filiationList":[{"brName":"莱芜泰丰食品有限公司2保定市新市区分公司","brCreditCode":"91110108MA01MK4F0Y","brRegNo":"1306001200312","brRegOrg":"河北省保定市工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2沧县第一分店","brCreditCode":"","brRegNo":"130921300000660","brRegOrg":"河北省沧州市沧县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2沧州市第二分店","brCreditCode":"","brRegNo":"130900300000056","brRegOrg":"河北省沧州市渤海新区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2沧州市第一分店","brCreditCode":"","brRegNo":"130900300000353","brRegOrg":"河北省沧州市渤海新区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2沧州市运河区分公司","brCreditCode":"","brRegNo":"1309001200376","brRegOrg":"河北省沧州市渤海新区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2长安区分公司","brCreditCode":"","brRegNo":"1301021200042","brRegOrg":"河北省石家庄市长安区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2承德县分公司","brCreditCode":"","brRegNo":"130821300003396","brRegOrg":"河北省承德市承德县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2东光分公司","brCreditCode":"","brRegNo":"130923300001630","brRegOrg":"河北省沧州市东光县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2峰峰分公司","brCreditCode":"","brRegNo":"130406300004819","brRegOrg":"河北省邯郸市峰峰矿区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2峰峰矿区分公司","brCreditCode":"","brRegNo":"1304061200069","brRegOrg":"河北省邯郸市峰峰矿区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2抚宁分公司","brCreditCode":"","brRegNo":"130323300000196","brRegOrg":"河北省秦皇岛市抚宁区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2高邑分公司","brCreditCode":"","brRegNo":"1301271200004","brRegOrg":"河北省石家庄市高邑县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2故城分公司","brCreditCode":"","brRegNo":"1311291000964","brRegOrg":"河北省衡水市故城县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2海兴县分公司","brCreditCode":"","brRegNo":"130924300000012","brRegOrg":"河北省沧州市海兴县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2邯郸分公司","brCreditCode":"","brRegNo":"1304001200175","brRegOrg":"河北省邯郸市工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2邯郸市分公司","brCreditCode":"","brRegNo":"130402300001365","brRegOrg":"河北省邯郸市丛台区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2邯郸县分公司","brCreditCode":"","brRegNo":"130421300005022","brRegOrg":"河北省邯郸市邯山区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2黄骅市分公司","brCreditCode":"","brRegNo":"1309831200077","brRegOrg":"河北省沧州市黄骅市工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2教育书店","brCreditCode":"","brRegNo":"130104300005484","brRegOrg":"河北省石家庄市桥西区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2宽城分公司","brCreditCode":"","brRegNo":"130827300005016","brRegOrg":"河北省承德市宽城满族自治县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2隆化分公司","brCreditCode":"","brRegNo":"130825300001280","brRegOrg":"河北省承德市隆化县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2孟村县分公司","brCreditCode":"","brRegNo":"130930300000272","brRegOrg":"河北省沧州市孟村回族自治县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2南和县分公司","brCreditCode":"","brRegNo":"130527300000544","brRegOrg":"河北省邢台市南和县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2平山分公司","brCreditCode":"","brRegNo":"1301311200061","brRegOrg":"河北省石家庄市平山县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2曲阳分公司","brCreditCode":"","brRegNo":"130634300003178","brRegOrg":"河北省保定市曲阳县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2任丘市分公司","brCreditCode":"","brRegNo":"1309821200008","brRegOrg":"河北省沧州市任丘市工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2唐山市路南区分公司","brCreditCode":"","brRegNo":"130200300017834","brRegOrg":"河北省唐山市工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2万全分公司","brCreditCode":"","brRegNo":"130729300000615","brRegOrg":"河北省张家口市万全县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2文成分公司","brCreditCode":"","brRegNo":"130424300004367","brRegOrg":"河北省邯郸市成安县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2吴桥分公司","brCreditCode":"","brRegNo":"1309281200001","brRegOrg":"河北省沧州市吴桥县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2献县分公司","brCreditCode":"","brRegNo":"1309291200012","brRegOrg":"河北省沧州市献县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2兴隆县分公司","brCreditCode":"","brRegNo":"130822300000093","brRegOrg":"河北省承德市兴隆县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2宣化县分公司","brCreditCode":"","brRegNo":"1307211200001","brRegOrg":"河北省张家口市宣化区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2盐山分公司","brCreditCode":"","brRegNo":"130925300002676","brRegOrg":"河北省沧州市盐山县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2枣强县分公司","brCreditCode":"","brRegNo":"1311211000427","brRegOrg":"河北省衡水市枣强县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2张家口经营中心","brCreditCode":"","brRegNo":"130703300001950","brRegOrg":"河北省石家庄市桥西区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2专卖店","brCreditCode":"","brRegNo":"1300001200172","brRegOrg":"河北省工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2涞源分公司","brCreditCode":"","brRegNo":"1306301200029","brRegOrg":"河北省保定市涞源县工商行政管理局"}],"liquidationList":[{"liqPrincipal":"清算负责人","liqMen":"清算组成员","liqSituation":"清算完结情况","liqEndDate":"2019-10-25","debtTranee":"债务承接人","claimTranee":"债权承接人","address":"地址","telephone":"****"}],"alterList":[{"altItem":"经营范围变更","altBe":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售、房屋出租、仓储;(以下限分支机构凭许可证在有效期内经营)预包装食品的批发与零售、酒店管理;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告、供应链管理、仓储运输物流管理、物流园区管理、货物运输管理、供应链管理咨询(以上全部范围法律、法规及国务院决定禁止或者限制的事项,不得经营;需其他部门审批的事项,待批准后,方可经营)。(依法须经批准的项目,经相关部门批准后方可开展经营活动)","altAf":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售、房屋出租、仓储;(以下限分支机构凭许可证在有效期内经营)预包装食品的批发与零售、酒店管理;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告、供应链管理、仓储运输物流管理、物流园区管理、货物运输管理、供应链管理咨询;普通货运、货物专用运输(集装箱、冷藏保鲜设备)。(依法须经批准的项目,经相关部门批准后方可开展经营活动)","altDate":"2015-11-16"},{"altItem":"财务负责人","altBe":"","altAf":"张靖华 ***","altDate":"2015-11-16"},{"altItem":"联络员备案","altBe":"","altAf":"刘怡姗 ***","altDate":"2015-11-16"},{"altItem":"经营范围变更","altBe":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售;房屋出租、仓储服务、货物装卸;(以下限分支机构凭许可证在有效期内经营):预包装食品的批发与零售、酒店管理;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告;(以上全部范围法律、法规及国务院决定禁止或者限制的事项,不得经营;需其它部门审批的事项,待批准后,方可经营)。","altAf":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售、房屋出租、仓储;(以下限分支机构凭许可证在有效期内经营)预包装食品的批发与零售、酒店管理;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告、供应链管理、仓储运输物流管理、物流园区管理、货物运输管理、工银链管理咨询(以上全部范围法律、法规及国务院决定禁止或者限制的事项,不得经营;需其他部门审批的事项,待批准后,方可经营)。(依法须经批准的项目,经相关部门批准后方可开展经营活动)","altDate":"2014-12-29"},{"altItem":"地址变更","altBe":"鹿泉市开发区昌盛大街17号","altAf":"石家庄市鹿泉开发区昌盛大街17号","altDate":"2014-12-29"},{"altItem":"经营范围变更","altBe":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售;房屋出租、仓储服务;(以下限分支机构凭许可证在有效期内经营):预包装食品的批发与零售、酒店管理;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告;(以上全部范围法律、法规及国务院决定禁止或者限制的事项,不得经营;需其它部门审批的事项,待批准后,方可经营)。","altAf":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售;房屋出租、仓储服务、货物装卸;(以下限分支机构凭许可证在有效期内经营):预包装食品的批发与零售、酒店管理;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告;(以上全部范围法律、法规及国务院决定禁止或者限制的事项,不得经营;需其它部门审批的事项,待批准后,方可经营)。","altDate":"2014-04-03"},{"altItem":"其他事项备案","altBe":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售;(以下限分支机构凭许可证在有效期内经营):预包装食品的批发与零售、酒店管理、房屋出租、仓储;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告(以上全部范围法律、法规及国务院决定禁止或者限制的事项,不得经营;需其它部门审批的事项,待批准后,方可经营)。","altAf":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售;房屋出租、仓储服务;(以下限分支机构凭许可证在有效期内经营):预包装食品的批发与零售、酒店管理;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告;(以上全部范围法律、法规及国务院决定禁止或者限制的事项,不得经营;需其它部门审批的事项,待批准后,方可经营)。","altDate":"2013-02-26"},{"altItem":"其他事项备案","altBe":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售;(以下限分支机构凭许可证在有效期内经营):图书、报刊、电子出版物的批发、预包装食品的批发与零售、酒店管理、房屋出租、仓储。","altAf":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售;(以下限分支机构凭许可证在有效期内经营):预包装食品的批发与零售、酒店管理、房屋出租、仓储;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告(以上全部范围法律、法规及国务院决定禁止或者限制的事项,不得经营;需其它部门审批的事项,待批准后,方可经营)。","altDate":"2012-02-20"},{"altItem":"投资人(股权)变更","altBe":"法人股东:无,无,无,自然人股东:***5121,雷造民,20.0,***,张朝峰,140.8,***,李永强,39.2","altAf":"法人股东:无,无,无,自然人股东:***5121,雷造民,20.0,***,张朝峰,180.0","altDate":"2012-02-20"},{"altItem":"注册资本变更","altBe":"200.0","altAf":"200.0000","altDate":"2012-02-20"},{"altItem":"其他事项备案","altBe":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;(以下限分支机构凭许可证在有效期内经营):图书、报刊、电子出版物的批发、预包装食品的批发与零售、酒店管理、房屋出租、仓储。","altAf":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售;(以下限分支机构凭许可证在有效期内经营):图书、报刊、电子出版物的批发、预包装食品的批发与零售、酒店管理、房屋出租、仓储。","altDate":"2011-11-01"},{"altItem":"投资人(股权)变更","altBe":"法人股东:无,无,无,自然人股东:***5121,雷造民,40.8,***,张朝峰,120.0,***,李永强,39.2","altAf":"法人股东:无,无,无,自然人股东:***5121,雷造民,20.0,***,张朝峰,140.8,***,李永强,39.2","altDate":"2011-04-18"},{"altItem":"市场主体类型变更","altBe":"1100","altAf":"1130","altDate":"2011-04-18"},{"altItem":"投资人(股权)变更","altBe":"法人股东:,河北教育委员会机关工会委员会,39.2,自然人股东:***5121,雷造民,102.0","altAf":"法人股东:无,无,无,自然人股东:***5121,雷造民,40.8,***,张朝峰,120.0,***,李永强,39.2","altDate":"2010-08-27"},{"altItem":"注册资本变更","altBe":"200.0","altAf":"200.0000","altDate":"2010-08-27"},{"altItem":"其他事项备案","altBe":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;(以下限分支机构凭许可证在有效期内经营):图书、报刊、电子出版物的批发。","altAf":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;(以下限分支机构凭许可证在有效期内经营):图书、报刊、电子出版物的批发、预包装食品的批发与零售、酒店管理、房屋出租、仓储。","altDate":"2010-06-21"},{"altItem":"地址变更","altBe":"石家庄市联盟路707号","altAf":"鹿泉市开发区昌盛大街17号","altDate":"2009-11-23"},{"altItem":"地址变更","altBe":"石家庄市友谊北大街302号","altAf":"石家庄市联盟路707号","altDate":"2005-06-28"},{"altItem":"其他事项备案","altBe":"文化用品、体育用品;仪器仪表、计算机及配件、现代化办公设备;针纺织品、日用百货、服装的批发、零售;教育资源开发及咨询服务;摄影服务、美术设计、饮食供应服务(限酒店经营)、工艺美术品(不含金银饰品)。","altAf":"文化用品、体育用品;仪器仪表、计算机及配件、现代化办公设备;针纺织品、日用百货、服装的批发、零售;教育资源开发及咨询服务;摄影服务、美术设计、饮食供应服务(限酒店经营)、工艺美术品(不含金银饰品)、图书、报刊、电子出版物批发(限分支机构经营)。","altDate":"2004-12-30"},{"altItem":"其他事项备案","altBe":"巩兴超--11 ,99-6-1 ;雷造民--03 ,99-6-1 ;雷造民--02 ,99-6-1 ;李同升--11 ,99-6-1 ;刘新宗--01 ,99-6-1 ;彭瑞珍--06 ,99-6-1 ;王爱兵--11 ,99-6-1 ;王秋洪--11 ,99-6-1 ;张东风--11 ,99-6-1 ;赵桂森--06 ,99-6-1 ;","altAf":"雷造民--01 ,99-6-1 ;雷造民--03 ,99-6-1 ;马振行--02 ,04-8-25  ;雷重熹--11 ,04-8-25  ;陈桂民--11 ,04-8-25  ;李军方--11 ,04-8-25  ;宿志辉--06 ,04-8-25  ;阎占基--06 ,04-8-25  ;赵立华--06 ,04-8-25  ;","altDate":"2004-08-25"},{"altItem":"投资人(股权)变更","altBe":"","altAf":"雷造民 ,102.00 ,51.00  ,04-8-25  ;","altDate":"2004-08-25"},{"altItem":"法定代表人变更","altBe":"刘新宗","altAf":"雷造民","altDate":"2004-08-25"},{"altItem":"投资人(股权)变更","altBe":"河北教育报刊社 ,102.00 ,51.00  ,00-1-1 ;河北教育报刊社工会 ,38.00  ,19.00  ,00-1-1 ;河北教育委员会机关工会委员会 ,60.00  ,30.00  ,00-1-1 ;","altAf":"河北教育报刊社工会 ,58.00  ,29.00  ,00-1-1 ;河北教育委员会机关工会委员会 ,60.00  ,30.00  ,00-1-1 ;","altDate":"2004-08-25"},{"altItem":"地址变更","altBe":"石家庄市红军大街副1号","altAf":"石家庄市友谊北大街302号","altDate":"2001-11-29"},{"altItem":"其他事项备案","altBe":"文化用品,体育用品;仪器仪表,计算机及配件,现代化办公设备;针纺织品,日用百货,服装的批发,零售;教育资源开发及咨询服务。","altAf":"文化用品,体育用品;仪器仪表,计算机及配件,现代化办公设备;针纺织品,日用百货,服装的批发,零售;教育资源开发及咨询服务;摄影服务,美术设计,饮食供应服务(限酒店经营),工艺美术品(不含金银饰品)。","altDate":"1995-02-14"}],"mortgageBasicList":[{"mabRegNo":"登记编号","mabRegDate":"2019-10-25","mabRegOrg":"登记机关","mabGuarAmount":"10000.0","mabpubDate":"2019-10-24","mabStatus":"状态"}],"mortgageRegList":[{"mabRegNo":"987","mabRegDate":"2014-10-17","mabRegOrg":"登记机关","mabGuarType":"被担保债券种类","mabGuarAmount":"123456","mabProvCode":"省份代码","mabGuarRange":"担保范围","debtStartDate":"2014-10-16","debtEndDate":"2014-10-15","mabStatus":"1"}],"mortgagePawnList":[{"mabRegNo":"登记编号","mabPawnName":"名称","mabPawnOwner":"所有权或使用权归属","mabPawnDetails":"数量、质量、状况、所在","mabPawnRemark":"备注"}],"mortgageAltList":[{"mabRegNo":"登记编号","mabAltDate":"2019-10-26","mabAltDetails":"变更内容"}],"mortgageCanList":[{"mabRegNo":"登记编号","mabCanDate":"1995-02-14","mabCanReason":"注销原因"}],"mortgageDebtList":[{"mabRegNo":"内工商威抵（2018）第0058号","mabDebtType":"种类","mabDebtAmount":"988","debtStartDate":"2017-12-29","debtEndDate":"2017-12-26","mabDebtRange":"担保范围","mabDebtRemark":"备注"}],"mortgagePerList":[{"mabRegNo":"登记编号","mabPerName":"抵押权人名称","mabPerCerType":"抵押权人证照","mabPerCerId":"抵押权人证照","mabPerAddress":"所在地"}],"stockPawnList":[{"stkPawnRegNo":"130185201601140003","stkPawnCzPer":"张朝峰","stkPawnCzCerNo":"***","stkPawnCzAmount":"180.0000","stkPawnZqPer":"河北融投担保集团有限公司","stkPawnZqCerNo":"911300006610578481","stkPawnRegDate":"2016-01-14","stkPawnStatus":"有效","stkPawnPubDate":"2016-01-14","relDetails":"d7c86c1944ad8db2502f9106d196a7e9"},{"stkPawnRegNo":"130185201410150001","stkPawnCzPer":"张朝峰","stkPawnCzCerNo":"***","stkPawnCzAmount":"180.0000","stkPawnZqPer":"河北融投担保集团有限公司","stkPawnZqCerNo":"911300006610578481","stkPawnRegDate":"2014-10-15","stkPawnStatus":"无效","stkPawnPubDate":"2014-10-15","relDetails":"901a209256b59a4b690d2d7e2a9f9fc8"}],"stockPawnAltList":[{"relDetails":"关联内容","stkPawnAltDate":"2019-12-03","stkPawnAltDetails":"变更内容"}],"stockPawnCanList":[{"relDetails":"901a209256b59a4b690d2d7e2a9f9fc8","stkPawnCanDate":"2019-05-22","stkPawnCanRreason":"主债权消灭"}],"sharesFrostList":[{"froAuth":"内邱县人民法院","froDocNo":"（2018）冀0523民初726号","froAm":"181.000000","froFrom":"2018/07/03","froTo":"2020/07/02","thawAuth":"内邱县人民法院","thawDocNo":"（2018）冀0523民初726号","thawDate":"","thawComment":"失效"},{"froAuth":"石家庄市长安区人民法院","froDocNo":"（2017）冀0102民初8616-1号","froAm":"180.000000","froFrom":"2017/11/08","froTo":"2019/11/07","thawAuth":"石家庄市长安区人民法院","thawDocNo":"（2020）冀0102执恢325号","thawDate":"2020-11-19","thawComment":""},{"froAuth":"河北省石家庄市中级人民法院","froDocNo":"（2018）冀01民初934号","froAm":"180.000000","froFrom":"2018/12/17","froTo":"2021/12/16","thawAuth":"河北省石家庄市中级人民法院","thawDocNo":"（2019）冀01执659号之十二","thawDate":"2020-09-15","thawComment":""}],"caseInfoList":[{"penDecNo":"京海市监处字〔2020〕第303号","illegFact":"010101","penType":"处罚种类","penTypeCn":"处罚种类中文","penResult":"罚款200000元。","penAuth":"处罚机关","penAuthCn":"北京市海淀区市场监督管理局","penDecissDate":"2020-07-21","publicDate":"公示日期"}],"exceptionList":[]}]
+2021-09-03 11:23:28.709 [http-nio-8080-exec-13] INFO  com.amarsoft.exportexcel.template.CatalogTemplate - ./config//data/R11C53.xlsx,写入成功
+2021-09-03 11:29:15.403 [main] INFO  com.amarsoft.App - Starting App using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 9068 (H:\github\ApiDoc\target\classes started by mjwang in H:\github\ApiDoc)
+2021-09-03 11:29:15.404 [main] INFO  com.amarsoft.App - The following profiles are active: dev
+2021-09-03 11:29:16.253 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-09-03 11:29:16.260 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-03 11:29:16.260 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-03 11:29:16.260 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-03 11:29:16.310 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring embedded WebApplicationContext
+2021-09-03 11:29:16.310 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 878 ms
+2021-09-03 11:29:16.515 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-09-03 11:29:16.756 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-03 11:29:16.805 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-03 11:29:16.875 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-09-03 11:29:16.928 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-09-03 11:29:16.946 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/amarpack'
+2021-09-03 11:29:16.946 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-09-03 11:29:16.956 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-09-03 11:29:16.974 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-09-03 11:29:17.116 [main] INFO  com.amarsoft.App - Started App in 2.048 seconds (JVM running for 2.526)
+2021-09-03 11:29:20.731 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-03 11:29:20.731 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-03 11:29:20.733 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-09-03 11:30:08.475 [main] INFO  com.amarsoft.App - Starting App using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 6932 (H:\github\ApiDoc\target\classes started by mjwang in H:\github\ApiDoc)
+2021-09-03 11:30:08.478 [main] INFO  com.amarsoft.App - The following profiles are active: dev
+2021-09-03 11:30:09.434 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-09-03 11:30:09.440 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-03 11:30:09.440 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-03 11:30:09.441 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-03 11:30:09.497 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring embedded WebApplicationContext
+2021-09-03 11:30:09.497 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 982 ms
+2021-09-03 11:30:09.678 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-09-03 11:30:09.998 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-03 11:30:10.059 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-03 11:30:10.144 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-09-03 11:30:10.206 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-09-03 11:30:10.225 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/amarpack'
+2021-09-03 11:30:10.225 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-09-03 11:30:10.238 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-09-03 11:30:10.259 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-09-03 11:30:10.413 [main] INFO  com.amarsoft.App - Started App in 2.39 seconds (JVM running for 2.956)
+2021-09-03 11:30:18.320 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-03 11:30:18.321 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-03 11:30:18.322 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-09-03 11:35:43.642 [main] INFO  com.amarsoft.App - Starting App using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 14080 (H:\github\ApiDoc\target\classes started by mjwang in H:\github\ApiDoc)
+2021-09-03 11:35:43.644 [main] INFO  com.amarsoft.App - The following profiles are active: dev
+2021-09-03 11:35:44.473 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-09-03 11:35:44.478 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-03 11:35:44.478 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-03 11:35:44.478 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-03 11:35:44.528 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring embedded WebApplicationContext
+2021-09-03 11:35:44.528 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 858 ms
+2021-09-03 11:35:44.704 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-09-03 11:35:44.915 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-03 11:35:44.962 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-03 11:35:45.032 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-09-03 11:35:45.087 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-09-03 11:35:45.105 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/amarpack'
+2021-09-03 11:35:45.105 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-09-03 11:35:45.117 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-09-03 11:35:45.135 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-09-03 11:35:45.284 [main] INFO  com.amarsoft.App - Started App in 1.98 seconds (JVM running for 2.416)
+2021-09-03 11:35:58.750 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-03 11:35:58.750 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-03 11:35:58.751 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-09-03 14:11:50.045 [main] INFO  com.amarsoft.App - Starting App using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 14432 (H:\github\ApiDoc\target\classes started by mjwang in H:\github\ApiDoc)
+2021-09-03 14:11:50.047 [main] INFO  com.amarsoft.App - The following profiles are active: dev
+2021-09-03 14:11:50.990 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-09-03 14:11:50.997 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-03 14:11:50.998 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-03 14:11:50.998 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-09-03 14:11:51.057 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring embedded WebApplicationContext
+2021-09-03 14:11:51.057 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 981 ms
+2021-09-03 14:11:51.254 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-09-03 14:11:51.534 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-03 14:11:51.605 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-03 14:11:51.706 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-09-03 14:11:51.786 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-09-03 14:11:51.814 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/amarpack'
+2021-09-03 14:11:51.815 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-09-03 14:11:51.830 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-09-03 14:11:51.863 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-09-03 14:11:52.045 [main] INFO  com.amarsoft.App - Started App in 2.366 seconds (JVM running for 3.542)
+2021-09-03 14:12:25.691 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-03 14:12:25.691 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-03 14:12:25.692 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-09-03 14:12:25.719 [http-nio-8080-exec-1] INFO  com.amarsoft.controller.ApiController - 输入参数：{"transcode":"R227","source":"EDS","params":{"entName":"莱芜泰丰食品有限公司"},"userid":"11","orgid":"EDS","account":"EDS"}
+2021-09-03 14:12:25.752 [http-nio-8080-exec-1] INFO  com.amarsoft.exportexcel.request.QueryAndExport - req param:{"entName":"莱芜泰丰食品有限公司"}
+2021-09-03 14:12:25.755 [http-nio-8080-exec-1] ERROR com.amarsoft.controller.ApiController - 请求出错
+java.lang.NullPointerException: null
+	at com.amarsoft.exportexcel.request.QueryAndExport.doExecute(QueryAndExport.java:34)
+	at com.amarsoft.controller.ApiController.reqApi(ApiController.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2021-09-03 14:13:01.550 [http-nio-8080-exec-3] INFO  com.amarsoft.controller.ApiController - 输入参数：{"transcode":"R227","source":"EDS","params":{"entName":"莱芜泰丰食品有限公司"},"userid":"11","orgid":"EDS","account":"EDS"}
+2021-09-03 14:13:01.550 [http-nio-8080-exec-3] INFO  com.amarsoft.exportexcel.request.QueryAndExport - req param:{"entName":"莱芜泰丰食品有限公司"}
+2021-09-03 14:13:08.136 [http-nio-8080-exec-3] ERROR com.amarsoft.controller.ApiController - 请求出错
+java.lang.NullPointerException: null
+	at com.amarsoft.exportexcel.request.QueryAndExport.doExecute(QueryAndExport.java:34)
+	at com.amarsoft.controller.ApiController.reqApi(ApiController.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2021-09-03 14:13:28.599 [http-nio-8080-exec-2] INFO  com.amarsoft.controller.ApiController - 输入参数：{"transcode":"R227","source":"EDS","params":{"entName":"莱芜泰丰食品有限公司"},"userid":"11","orgid":"EDS","account":"EDS"}
+2021-09-03 14:14:12.928 [http-nio-8080-exec-2] INFO  com.amarsoft.exportexcel.request.QueryAndExport - req param:{"entName":"莱芜泰丰食品有限公司"}
+2021-09-03 14:14:12.929 [http-nio-8080-exec-2] ERROR com.amarsoft.controller.ApiController - 请求出错
+java.lang.NullPointerException: null
+	at com.amarsoft.exportexcel.request.QueryAndExport.doExecute(QueryAndExport.java:34)
+	at com.amarsoft.controller.ApiController.reqApi(ApiController.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2021-09-03 14:14:20.820 [http-nio-8080-exec-4] INFO  com.amarsoft.controller.ApiController - 输入参数：{
+	"env": "test",
+	"tmp": "default",
+	"params": {
+		"transcode": "R11C53",
+		"userid": "11",
+		"orgid": "EDS",
+		"account": "EDS",
+		"source": "EDS",
+		"params": {
+			"Name": "莱芜泰丰食品有限公司2",
+			"nametype": "1"
+		}
+	}
+}
+2021-09-03 14:14:25.658 [http-nio-8080-exec-4] INFO  com.amarsoft.exportexcel.request.QueryAndExport - req param:{"transcode":"R11C53","source":"EDS","params":{"nametype":"1","Name":"莱芜泰丰食品有限公司2"},"userid":"11","orgid":"EDS","account":"EDS"}
+2021-09-03 14:14:26.508 [http-nio-8080-exec-4] INFO  com.amarsoft.exportexcel.request.QueryAndExport - response data:[{"basicList":[{"enterpriseName":"莱芜泰丰食品有限公司2","creditCode":"91130185104360588P","regNo":"130000000013387","enterpriseType":"有限责任公司(自然人投资或控股)","frName":"张朝峰","regCap":"200.000000","regCapCur":"人民币元","recCap":"","esDate":"1995-02-14","openFrom":"1995-02-14","openTo":"2025-02-14","regOrg":"鹿泉区市场监督管理局","apprDate":"","enterpriseStatus":"在营（开业）","cancelDate":"2014-10-26","revokeDate":"2014-10-19","address":"石家庄市鹿泉开发区昌盛大街17号","operateScope":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售；水果、蔬菜的批发、零售、房屋出租、仓储；（以下限分支机构凭许可证在有效期内经营）预包装食品的批发与零售、酒店管理；文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务；设计、制作、代理、发布各类广告、供应链管理、仓储运输物流管理、物流园区管理、货物运输管理、供应链管理咨询；普通货运、货物专用运输（集装箱、冷藏保鲜设备）。（依法须经批准的项目，经相关部门批准后方可开展经营活动）","abuItem":"制造方正电子出版系统","industryCode":"","industryName":"","industryPhyCode":"","industryPhyName":"","anCheYear":"","oriRegNo":"1300001002875","telephone":"","addrDistrict":"","enterpriseHisName":"北京莱芜泰丰食品有限公司2","regOrgProvince":"","regOrgCity":"","regOrgDistrict":"","email":"","empNum":"","regOrgCode":"","enterpriseTypeCode":"","enterpriseEngName":""}],"shareholderList":[{"shareholderName":"张朝峰","shareholderType":"","subConAm":"180.000000","subConCur":"人民币元","subConForm":"货币","fundedRatio":"90.00%","subConDate":"1995-02-13","country":"中国"},{"shareholderName":"雷造民","shareholderType":"","subConAm":"20.000000","subConCur":"人民币元","subConForm":"","fundedRatio":"10.00%","subConDate":"1995-02-13","country":"中国"}],"personList":[{"name":"张朝峰","position":"董事长","enterpriseName":"莱芜泰丰食品有限公司2","isFrName":"","personAmount":"4"},{"name":"雷造民","position":"董事","enterpriseName":"莱芜泰丰食品有限公司2","isFrName":"","personAmount":"4"},{"name":"李永强","position":"董事","enterpriseName":"莱芜泰丰食品有限公司2","isFrName":"","personAmount":"4"},{"name":"张宪军","position":"监事","enterpriseName":"莱芜泰丰食品有限公司2","isFrName":"","personAmount":"4"}],"entInvItemList":[{"relEntName":"沧县厚朴教育服务有限公司","creditCode":"7897777","regNo":"130921000006388","entType":"其他有限责任公司","frName":"常金","regCap":"52.600000","regCapCur":"人民币元","subConAm":"25.000000","subConCur":"人民币元","fundedRatio":"47.53%","conForm":"货币","esDate":"2002-06-10","regOrg":"沧县工商行政管理局","entStatus":"吊销，未注销","cancelDate":"1995-02-19","revokeDate":"2008-01-11","regOrgCode":"130921","binvAmount":"9"},{"relEntName":"河北教育厚朴旅行社有限责任公司","creditCode":"9113010077132306XW","regNo":"130000000012152","entType":"其他有限责任公司","frName":"张朝峰","regCap":"300.000000","regCapCur":"人民币元","subConAm":"201.000000","subConCur":"人民币元","fundedRatio":"67.00%","conForm":"货币","esDate":"2005-02-05","regOrg":"新华区工商行政管理局","entStatus":"在营（开业）","cancelDate":"","revokeDate":"","regOrgCode":"130105","binvAmount":"9"},{"relEntName":"河北厚德在屋校园服务有限责任公司","creditCode":"9113010077132306XW","regNo":"130100000018272","entType":"有限责任公司(自然人投资或控股的法人独资)","frName":"雷造民","regCap":"300.000000","regCapCur":"人民币元","subConAm":"300.000000","subConCur":"人民币元","fundedRatio":"100.00%","conForm":"货币","esDate":"2007-08-28","regOrg":"石家庄市工商行政管理局","entStatus":"吊销，未注销","cancelDate":"","revokeDate":"2012-04-09","regOrgCode":"130100","binvAmount":"9"},{"relEntName":"鹿泉市厚朴新科教工程技术有限责任公司","creditCode":"9113010077132306XW","regNo":"130185000009980","entType":"有限责任公司(自然人投资或控股的法人独资)","frName":"雷造民","regCap":"100.000000","regCapCur":"人民币元","subConAm":"100.000000","subConCur":"人民币元","fundedRatio":"100.00%","conForm":"货币","esDate":"2008-07-31","regOrg":"鹿泉区工商行政管理局","entStatus":"吊销，未注销","cancelDate":"","revokeDate":"2010-02-02","regOrgCode":"130185","binvAmount":"9"},{"relEntName":"鹿泉厚朴科技有限责任公司","creditCode":"91130185768149494C","regNo":"130185000000111","entType":"其他有限责任公司","frName":"张朝峰","regCap":"500.000000","regCapCur":"人民币元","subConAm":"490.000000","subConCur":"人民币元","fundedRatio":"98.00%","conForm":"货币","esDate":"2004-12-03","regOrg":"鹿泉区工商行政管理局","entStatus":"在营（开业）","cancelDate":"","revokeDate":"","regOrgCode":"130185","binvAmount":"9"},{"relEntName":"高碑店市育兴校产服务有限责任公司","creditCode":"9113010077132306XW","regNo":"1306842000388","entType":"有限责任公司(自然人投资或控股)","frName":"徐东明","regCap":"50.000000","regCapCur":"人民币元","subConAm":"5.000000","subConCur":"人民币元","fundedRatio":"10.00%","conForm":"货币","esDate":"2004-09-06","regOrg":"高碑店市工商行政管理局","entStatus":"注销","cancelDate":"2008-04-11","revokeDate":"","regOrgCode":"130684","binvAmount":"9"},{"relEntName":"河北厚朴教育资源有限责任公司","creditCode":"9113010077132306XW","regNo":"1301001001513","entType":"其他有限责任公司","frName":"付刚","regCap":"50.000000","regCapCur":"人民币元","subConAm":"20.000000","subConCur":"人民币元","fundedRatio":"40.00%","conForm":"货币","esDate":"2002-08-08","regOrg":"石家庄市工商行政管理局","entStatus":"吊销，未注销","cancelDate":"","revokeDate":"2009-04-17","regOrgCode":"130100","binvAmount":"9"},{"relEntName":"石家庄厚朴冷配农业科技有限公司","creditCode":"91130185MA09L8140Q","regNo":"130185000062706","entType":"其他有限责任公司","frName":"张东","regCap":"500.000000","regCapCur":"人民币元","subConAm":"25.000000","subConCur":"人民币元","fundedRatio":"5.00%","conForm":"货币","esDate":"2017-12-26","regOrg":"鹿泉区工商行政管理局","entStatus":"注销","cancelDate":"2018-08-23","revokeDate":"","regOrgCode":"130185","binvAmount":"9"},{"relEntName":"河北厚朴尔雅文化传播有限公司","creditCode":"91130185MA09L8BYX6","regNo":"130185000062714","entType":"其他有限责任公司","frName":"师红涛","regCap":"1000.000000","regCapCur":"人民币元","subConAm":"50.000000","subConCur":"人民币元","fundedRatio":"5.00%","conForm":"货币","esDate":"2017-12-26","regOrg":"鹿泉区工商行政管理局","entStatus":"注销","cancelDate":"2018-08-23","revokeDate":"","regOrgCode":"130185","binvAmount":"9"}],"frInvList":[{"relEntName":"石家庄尧合蔬菜综合批发市场管理有限公司","creditCode":"911101080592106008","regNo":"130100000509359","entType":"有限责任公司(自然人投资或控股)","frName":"张振国","regCap":"6000.000000","regCapCur":"人民币元","subConAm":"200.000000","subConCur":"人民币元","fundedRatio":"3.33%","conForm":"货币","esDate":"2014-05-22","regOrg":"石家庄市工商行政管理局","entStatus":"吊销，未注销","cancelDate":"2018-04-29","revokeDate":"2018-04-28","regOrgCode":"130100","pinvAmount":"4"},{"relEntName":"鹿泉厚朴科技有限责任公司","creditCode":"91130185768149494C","regNo":"130185000000111","entType":"其他有限责任公司","frName":"张朝峰","regCap":"500.000000","regCapCur":"人民币元","subConAm":"10.000000","subConCur":"人民币元","fundedRatio":"2.00%","conForm":"","esDate":"2004-12-03","regOrg":"鹿泉区工商行政管理局","entStatus":"在营（开业）","cancelDate":"","revokeDate":"","regOrgCode":"130185","pinvAmount":"4"},{"relEntName":"石家庄百纳商贸有限公司","creditCode":"","regNo":"1301032001026","entType":"有限责任公司(自然人投资或控股)","frName":"张朝峰","regCap":"50.000000","regCapCur":"人民币元","subConAm":"20.000000","subConCur":"人民币元","fundedRatio":"40.00%","conForm":"货币","esDate":"2003-09-19","regOrg":"长安区工商行政管理局","entStatus":"注销","cancelDate":"2006-06-20","revokeDate":"","regOrgCode":"130102","pinvAmount":"4"},{"relEntName":"河北厚朴冷链物流有限公司","creditCode":"91130185068119147Q","regNo":"130185000020643","entType":"有限责任公司(自然人独资)","frName":"张朝峰","regCap":"1000.000000","regCapCur":"人民币元","subConAm":"1000.000000","subConCur":"人民币元","fundedRatio":"100.00%","conForm":"货币","esDate":"2013-05-08","regOrg":"鹿泉区市场监督管理局","entStatus":"在营（开业）","cancelDate":"","revokeDate":"","regOrgCode":"130185","pinvAmount":"4"}],"frPositionList":[{"relEntName":"河北教育厚朴旅行社有限责任公司","regNo":"130000000012152","entType":"其他有限责任公司","frName":"张朝峰","regCap":"300.000000","regCapCur":"人民币元","esDate":"2005-02-05","regOrg":"新华区工商行政管理局","entStatus":"在营（开业）","cancelDate":"2014-10-17","revokeDate":"2014-10-16","position":"执行董事","isFrName":"是","regOrgCode":"130105","ppvAmount":"5"},{"relEntName":"鹿泉厚朴科技有限责任公司","regNo":"130185000000111","entType":"其他有限责任公司","frName":"张朝峰","regCap":"500.000000","regCapCur":"人民币元","esDate":"2004-12-03","regOrg":"鹿泉区工商行政管理局","entStatus":"在营（开业）","cancelDate":"","revokeDate":"","position":"董事长","isFrName":"是","regOrgCode":"130185","ppvAmount":"5"},{"relEntName":"石家庄百纳商贸有限公司","regNo":"1301032001026","entType":"有限责任公司(自然人投资或控股)","frName":"张朝峰","regCap":"50.000000","regCapCur":"人民币元","esDate":"2003-09-19","regOrg":"长安区工商行政管理局","entStatus":"注销","cancelDate":"2006-06-20","revokeDate":"","position":"执行董事","isFrName":"是","regOrgCode":"130102","ppvAmount":"5"},{"relEntName":"河北厚朴冷链物流有限公司","regNo":"130185000020643","entType":"有限责任公司(自然人独资)","frName":"张朝峰","regCap":"1000.000000","regCapCur":"人民币元","esDate":"2013-05-08","regOrg":"鹿泉区市场监督管理局","entStatus":"在营（开业）","cancelDate":"","revokeDate":"","position":"执行董事","isFrName":"是","regOrgCode":"130185","ppvAmount":"5"},{"relEntName":"河北厚朴冷链物流有限公司","regNo":"130185000020643","entType":"有限责任公司(自然人独资)","frName":"张朝峰","regCap":"1000.000000","regCapCur":"人民币元","esDate":"2013-05-08","regOrg":"鹿泉区市场监督管理局","entStatus":"在营（开业）","cancelDate":"","revokeDate":"","position":"总经理","isFrName":"是","regOrgCode":"130185","ppvAmount":"5"}],"filiationList":[{"brName":"莱芜泰丰食品有限公司2保定市新市区分公司","brCreditCode":"91110108MA01MK4F0Y","brRegNo":"1306001200312","brRegOrg":"河北省保定市工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2沧县第一分店","brCreditCode":"","brRegNo":"130921300000660","brRegOrg":"河北省沧州市沧县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2沧州市第二分店","brCreditCode":"","brRegNo":"130900300000056","brRegOrg":"河北省沧州市渤海新区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2沧州市第一分店","brCreditCode":"","brRegNo":"130900300000353","brRegOrg":"河北省沧州市渤海新区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2沧州市运河区分公司","brCreditCode":"","brRegNo":"1309001200376","brRegOrg":"河北省沧州市渤海新区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2长安区分公司","brCreditCode":"","brRegNo":"1301021200042","brRegOrg":"河北省石家庄市长安区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2承德县分公司","brCreditCode":"","brRegNo":"130821300003396","brRegOrg":"河北省承德市承德县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2东光分公司","brCreditCode":"","brRegNo":"130923300001630","brRegOrg":"河北省沧州市东光县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2峰峰分公司","brCreditCode":"","brRegNo":"130406300004819","brRegOrg":"河北省邯郸市峰峰矿区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2峰峰矿区分公司","brCreditCode":"","brRegNo":"1304061200069","brRegOrg":"河北省邯郸市峰峰矿区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2抚宁分公司","brCreditCode":"","brRegNo":"130323300000196","brRegOrg":"河北省秦皇岛市抚宁区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2高邑分公司","brCreditCode":"","brRegNo":"1301271200004","brRegOrg":"河北省石家庄市高邑县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2故城分公司","brCreditCode":"","brRegNo":"1311291000964","brRegOrg":"河北省衡水市故城县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2海兴县分公司","brCreditCode":"","brRegNo":"130924300000012","brRegOrg":"河北省沧州市海兴县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2邯郸分公司","brCreditCode":"","brRegNo":"1304001200175","brRegOrg":"河北省邯郸市工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2邯郸市分公司","brCreditCode":"","brRegNo":"130402300001365","brRegOrg":"河北省邯郸市丛台区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2邯郸县分公司","brCreditCode":"","brRegNo":"130421300005022","brRegOrg":"河北省邯郸市邯山区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2黄骅市分公司","brCreditCode":"","brRegNo":"1309831200077","brRegOrg":"河北省沧州市黄骅市工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2教育书店","brCreditCode":"","brRegNo":"130104300005484","brRegOrg":"河北省石家庄市桥西区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2宽城分公司","brCreditCode":"","brRegNo":"130827300005016","brRegOrg":"河北省承德市宽城满族自治县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2隆化分公司","brCreditCode":"","brRegNo":"130825300001280","brRegOrg":"河北省承德市隆化县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2孟村县分公司","brCreditCode":"","brRegNo":"130930300000272","brRegOrg":"河北省沧州市孟村回族自治县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2南和县分公司","brCreditCode":"","brRegNo":"130527300000544","brRegOrg":"河北省邢台市南和县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2平山分公司","brCreditCode":"","brRegNo":"1301311200061","brRegOrg":"河北省石家庄市平山县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2曲阳分公司","brCreditCode":"","brRegNo":"130634300003178","brRegOrg":"河北省保定市曲阳县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2任丘市分公司","brCreditCode":"","brRegNo":"1309821200008","brRegOrg":"河北省沧州市任丘市工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2唐山市路南区分公司","brCreditCode":"","brRegNo":"130200300017834","brRegOrg":"河北省唐山市工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2万全分公司","brCreditCode":"","brRegNo":"130729300000615","brRegOrg":"河北省张家口市万全县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2文成分公司","brCreditCode":"","brRegNo":"130424300004367","brRegOrg":"河北省邯郸市成安县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2吴桥分公司","brCreditCode":"","brRegNo":"1309281200001","brRegOrg":"河北省沧州市吴桥县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2献县分公司","brCreditCode":"","brRegNo":"1309291200012","brRegOrg":"河北省沧州市献县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2兴隆县分公司","brCreditCode":"","brRegNo":"130822300000093","brRegOrg":"河北省承德市兴隆县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2宣化县分公司","brCreditCode":"","brRegNo":"1307211200001","brRegOrg":"河北省张家口市宣化区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2盐山分公司","brCreditCode":"","brRegNo":"130925300002676","brRegOrg":"河北省沧州市盐山县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2枣强县分公司","brCreditCode":"","brRegNo":"1311211000427","brRegOrg":"河北省衡水市枣强县工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2张家口经营中心","brCreditCode":"","brRegNo":"130703300001950","brRegOrg":"河北省石家庄市桥西区工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2专卖店","brCreditCode":"","brRegNo":"1300001200172","brRegOrg":"河北省工商行政管理局"},{"brName":"莱芜泰丰食品有限公司2涞源分公司","brCreditCode":"","brRegNo":"1306301200029","brRegOrg":"河北省保定市涞源县工商行政管理局"}],"liquidationList":[{"liqPrincipal":"清算负责人","liqMen":"清算组成员","liqSituation":"清算完结情况","liqEndDate":"2019-10-25","debtTranee":"债务承接人","claimTranee":"债权承接人","address":"地址","telephone":"****"}],"alterList":[{"altItem":"经营范围变更","altBe":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售、房屋出租、仓储;(以下限分支机构凭许可证在有效期内经营)预包装食品的批发与零售、酒店管理;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告、供应链管理、仓储运输物流管理、物流园区管理、货物运输管理、供应链管理咨询(以上全部范围法律、法规及国务院决定禁止或者限制的事项,不得经营;需其他部门审批的事项,待批准后,方可经营)。(依法须经批准的项目,经相关部门批准后方可开展经营活动)","altAf":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售、房屋出租、仓储;(以下限分支机构凭许可证在有效期内经营)预包装食品的批发与零售、酒店管理;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告、供应链管理、仓储运输物流管理、物流园区管理、货物运输管理、供应链管理咨询;普通货运、货物专用运输(集装箱、冷藏保鲜设备)。(依法须经批准的项目,经相关部门批准后方可开展经营活动)","altDate":"2015-11-16"},{"altItem":"财务负责人","altBe":"","altAf":"张靖华 ***","altDate":"2015-11-16"},{"altItem":"联络员备案","altBe":"","altAf":"刘怡姗 ***","altDate":"2015-11-16"},{"altItem":"经营范围变更","altBe":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售;房屋出租、仓储服务、货物装卸;(以下限分支机构凭许可证在有效期内经营):预包装食品的批发与零售、酒店管理;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告;(以上全部范围法律、法规及国务院决定禁止或者限制的事项,不得经营;需其它部门审批的事项,待批准后,方可经营)。","altAf":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售、房屋出租、仓储;(以下限分支机构凭许可证在有效期内经营)预包装食品的批发与零售、酒店管理;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告、供应链管理、仓储运输物流管理、物流园区管理、货物运输管理、工银链管理咨询(以上全部范围法律、法规及国务院决定禁止或者限制的事项,不得经营;需其他部门审批的事项,待批准后,方可经营)。(依法须经批准的项目,经相关部门批准后方可开展经营活动)","altDate":"2014-12-29"},{"altItem":"地址变更","altBe":"鹿泉市开发区昌盛大街17号","altAf":"石家庄市鹿泉开发区昌盛大街17号","altDate":"2014-12-29"},{"altItem":"经营范围变更","altBe":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售;房屋出租、仓储服务;(以下限分支机构凭许可证在有效期内经营):预包装食品的批发与零售、酒店管理;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告;(以上全部范围法律、法规及国务院决定禁止或者限制的事项,不得经营;需其它部门审批的事项,待批准后,方可经营)。","altAf":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售;房屋出租、仓储服务、货物装卸;(以下限分支机构凭许可证在有效期内经营):预包装食品的批发与零售、酒店管理;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告;(以上全部范围法律、法规及国务院决定禁止或者限制的事项,不得经营;需其它部门审批的事项,待批准后,方可经营)。","altDate":"2014-04-03"},{"altItem":"其他事项备案","altBe":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售;(以下限分支机构凭许可证在有效期内经营):预包装食品的批发与零售、酒店管理、房屋出租、仓储;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告(以上全部范围法律、法规及国务院决定禁止或者限制的事项,不得经营;需其它部门审批的事项,待批准后,方可经营)。","altAf":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售;房屋出租、仓储服务;(以下限分支机构凭许可证在有效期内经营):预包装食品的批发与零售、酒店管理;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告;(以上全部范围法律、法规及国务院决定禁止或者限制的事项,不得经营;需其它部门审批的事项,待批准后,方可经营)。","altDate":"2013-02-26"},{"altItem":"其他事项备案","altBe":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售;(以下限分支机构凭许可证在有效期内经营):图书、报刊、电子出版物的批发、预包装食品的批发与零售、酒店管理、房屋出租、仓储。","altAf":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售;(以下限分支机构凭许可证在有效期内经营):预包装食品的批发与零售、酒店管理、房屋出租、仓储;文化艺术交流策划、舞台艺术造型、企业管理和形象策划、会务服务、展示展览服务;设计、制作、代理、发布各类广告(以上全部范围法律、法规及国务院决定禁止或者限制的事项,不得经营;需其它部门审批的事项,待批准后,方可经营)。","altDate":"2012-02-20"},{"altItem":"投资人(股权)变更","altBe":"法人股东:无,无,无,自然人股东:***5121,雷造民,20.0,***,张朝峰,140.8,***,李永强,39.2","altAf":"法人股东:无,无,无,自然人股东:***5121,雷造民,20.0,***,张朝峰,180.0","altDate":"2012-02-20"},{"altItem":"注册资本变更","altBe":"200.0","altAf":"200.0000","altDate":"2012-02-20"},{"altItem":"其他事项备案","altBe":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;(以下限分支机构凭许可证在有效期内经营):图书、报刊、电子出版物的批发、预包装食品的批发与零售、酒店管理、房屋出租、仓储。","altAf":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;水果、蔬菜的批发、零售;(以下限分支机构凭许可证在有效期内经营):图书、报刊、电子出版物的批发、预包装食品的批发与零售、酒店管理、房屋出租、仓储。","altDate":"2011-11-01"},{"altItem":"投资人(股权)变更","altBe":"法人股东:无,无,无,自然人股东:***5121,雷造民,40.8,***,张朝峰,120.0,***,李永强,39.2","altAf":"法人股东:无,无,无,自然人股东:***5121,雷造民,20.0,***,张朝峰,140.8,***,李永强,39.2","altDate":"2011-04-18"},{"altItem":"市场主体类型变更","altBe":"1100","altAf":"1130","altDate":"2011-04-18"},{"altItem":"投资人(股权)变更","altBe":"法人股东:,河北教育委员会机关工会委员会,39.2,自然人股东:***5121,雷造民,102.0","altAf":"法人股东:无,无,无,自然人股东:***5121,雷造民,40.8,***,张朝峰,120.0,***,李永强,39.2","altDate":"2010-08-27"},{"altItem":"注册资本变更","altBe":"200.0","altAf":"200.0000","altDate":"2010-08-27"},{"altItem":"其他事项备案","altBe":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;(以下限分支机构凭许可证在有效期内经营):图书、报刊、电子出版物的批发。","altAf":"中小学教育、教学仪器、现代化办公设备、文具用品、体育用品、服装的销售;(以下限分支机构凭许可证在有效期内经营):图书、报刊、电子出版物的批发、预包装食品的批发与零售、酒店管理、房屋出租、仓储。","altDate":"2010-06-21"},{"altItem":"地址变更","altBe":"石家庄市联盟路707号","altAf":"鹿泉市开发区昌盛大街17号","altDate":"2009-11-23"},{"altItem":"地址变更","altBe":"石家庄市友谊北大街302号","altAf":"石家庄市联盟路707号","altDate":"2005-06-28"},{"altItem":"其他事项备案","altBe":"文化用品、体育用品;仪器仪表、计算机及配件、现代化办公设备;针纺织品、日用百货、服装的批发、零售;教育资源开发及咨询服务;摄影服务、美术设计、饮食供应服务(限酒店经营)、工艺美术品(不含金银饰品)。","altAf":"文化用品、体育用品;仪器仪表、计算机及配件、现代化办公设备;针纺织品、日用百货、服装的批发、零售;教育资源开发及咨询服务;摄影服务、美术设计、饮食供应服务(限酒店经营)、工艺美术品(不含金银饰品)、图书、报刊、电子出版物批发(限分支机构经营)。","altDate":"2004-12-30"},{"altItem":"其他事项备案","altBe":"巩兴超--11 ,99-6-1 ;雷造民--03 ,99-6-1 ;雷造民--02 ,99-6-1 ;李同升--11 ,99-6-1 ;刘新宗--01 ,99-6-1 ;彭瑞珍--06 ,99-6-1 ;王爱兵--11 ,99-6-1 ;王秋洪--11 ,99-6-1 ;张东风--11 ,99-6-1 ;赵桂森--06 ,99-6-1 ;","altAf":"雷造民--01 ,99-6-1 ;雷造民--03 ,99-6-1 ;马振行--02 ,04-8-25  ;雷重熹--11 ,04-8-25  ;陈桂民--11 ,04-8-25  ;李军方--11 ,04-8-25  ;宿志辉--06 ,04-8-25  ;阎占基--06 ,04-8-25  ;赵立华--06 ,04-8-25  ;","altDate":"2004-08-25"},{"altItem":"投资人(股权)变更","altBe":"","altAf":"雷造民 ,102.00 ,51.00  ,04-8-25  ;","altDate":"2004-08-25"},{"altItem":"法定代表人变更","altBe":"刘新宗","altAf":"雷造民","altDate":"2004-08-25"},{"altItem":"投资人(股权)变更","altBe":"河北教育报刊社 ,102.00 ,51.00  ,00-1-1 ;河北教育报刊社工会 ,38.00  ,19.00  ,00-1-1 ;河北教育委员会机关工会委员会 ,60.00  ,30.00  ,00-1-1 ;","altAf":"河北教育报刊社工会 ,58.00  ,29.00  ,00-1-1 ;河北教育委员会机关工会委员会 ,60.00  ,30.00  ,00-1-1 ;","altDate":"2004-08-25"},{"altItem":"地址变更","altBe":"石家庄市红军大街副1号","altAf":"石家庄市友谊北大街302号","altDate":"2001-11-29"},{"altItem":"其他事项备案","altBe":"文化用品,体育用品;仪器仪表,计算机及配件,现代化办公设备;针纺织品,日用百货,服装的批发,零售;教育资源开发及咨询服务。","altAf":"文化用品,体育用品;仪器仪表,计算机及配件,现代化办公设备;针纺织品,日用百货,服装的批发,零售;教育资源开发及咨询服务;摄影服务,美术设计,饮食供应服务(限酒店经营),工艺美术品(不含金银饰品)。","altDate":"1995-02-14"}],"mortgageBasicList":[{"mabRegNo":"登记编号","mabRegDate":"2019-10-25","mabRegOrg":"登记机关","mabGuarAmount":"10000.0","mabpubDate":"2019-10-24","mabStatus":"状态"}],"mortgageRegList":[{"mabRegNo":"987","mabRegDate":"2014-10-17","mabRegOrg":"登记机关","mabGuarType":"被担保债券种类","mabGuarAmount":"123456","mabProvCode":"省份代码","mabGuarRange":"担保范围","debtStartDate":"2014-10-16","debtEndDate":"2014-10-15","mabStatus":"1"}],"mortgagePawnList":[{"mabRegNo":"登记编号","mabPawnName":"名称","mabPawnOwner":"所有权或使用权归属","mabPawnDetails":"数量、质量、状况、所在","mabPawnRemark":"备注"}],"mortgageAltList":[{"mabRegNo":"登记编号","mabAltDate":"2019-10-26","mabAltDetails":"变更内容"}],"mortgageCanList":[{"mabRegNo":"登记编号","mabCanDate":"1995-02-14","mabCanReason":"注销原因"}],"mortgageDebtList":[{"mabRegNo":"内工商威抵（2018）第0058号","mabDebtType":"种类","mabDebtAmount":"988","debtStartDate":"2017-12-29","debtEndDate":"2017-12-26","mabDebtRange":"担保范围","mabDebtRemark":"备注"}],"mortgagePerList":[{"mabRegNo":"登记编号","mabPerName":"抵押权人名称","mabPerCerType":"抵押权人证照","mabPerCerId":"抵押权人证照","mabPerAddress":"所在地"}],"stockPawnList":[{"stkPawnRegNo":"130185201601140003","stkPawnCzPer":"张朝峰","stkPawnCzCerNo":"***","stkPawnCzAmount":"180.0000","stkPawnZqPer":"河北融投担保集团有限公司","stkPawnZqCerNo":"911300006610578481","stkPawnRegDate":"2016-01-14","stkPawnStatus":"有效","stkPawnPubDate":"2016-01-14","relDetails":"d7c86c1944ad8db2502f9106d196a7e9"},{"stkPawnRegNo":"130185201410150001","stkPawnCzPer":"张朝峰","stkPawnCzCerNo":"***","stkPawnCzAmount":"180.0000","stkPawnZqPer":"河北融投担保集团有限公司","stkPawnZqCerNo":"911300006610578481","stkPawnRegDate":"2014-10-15","stkPawnStatus":"无效","stkPawnPubDate":"2014-10-15","relDetails":"901a209256b59a4b690d2d7e2a9f9fc8"}],"stockPawnAltList":[{"relDetails":"关联内容","stkPawnAltDate":"2019-12-03","stkPawnAltDetails":"变更内容"}],"stockPawnCanList":[{"relDetails":"901a209256b59a4b690d2d7e2a9f9fc8","stkPawnCanDate":"2019-05-22","stkPawnCanRreason":"主债权消灭"}],"sharesFrostList":[{"froAuth":"内邱县人民法院","froDocNo":"（2018）冀0523民初726号","froAm":"181.000000","froFrom":"2018/07/03","froTo":"2020/07/02","thawAuth":"内邱县人民法院","thawDocNo":"（2018）冀0523民初726号","thawDate":"","thawComment":"失效"},{"froAuth":"石家庄市长安区人民法院","froDocNo":"（2017）冀0102民初8616-1号","froAm":"180.000000","froFrom":"2017/11/08","froTo":"2019/11/07","thawAuth":"石家庄市长安区人民法院","thawDocNo":"（2020）冀0102执恢325号","thawDate":"2020-11-19","thawComment":""},{"froAuth":"河北省石家庄市中级人民法院","froDocNo":"（2018）冀01民初934号","froAm":"180.000000","froFrom":"2018/12/17","froTo":"2021/12/16","thawAuth":"河北省石家庄市中级人民法院","thawDocNo":"（2019）冀01执659号之十二","thawDate":"2020-09-15","thawComment":""}],"caseInfoList":[{"penDecNo":"京海市监处字〔2020〕第303号","illegFact":"010101","penType":"处罚种类","penTypeCn":"处罚种类中文","penResult":"罚款200000元。","penAuth":"处罚机关","penAuthCn":"北京市海淀区市场监督管理局","penDecissDate":"2020-07-21","publicDate":"公示日期"}],"exceptionList":[]}]
+2021-09-03 14:14:34.786 [http-nio-8080-exec-4] INFO  com.amarsoft.exportexcel.template.CatalogTemplate - ./config//data/R11C53.xlsx,写入成功
+2021-09-03 14:14:59.048 [http-nio-8080-exec-5] INFO  com.amarsoft.controller.ApiController - 输入参数：{
+        "env": "test",
+        "tmp": "default",
+        "params": {
+                "transcode": "R227",
+                "userid": "11",
+                "orgid": "EDS",
+                "account": "EDS",
+                "source": "EDS",
+                "params": {
+                        "entName": "莱芜泰丰食品有限公司"
+                }
+        }
+}
+2021-09-03 14:14:59.048 [http-nio-8080-exec-5] INFO  com.amarsoft.exportexcel.request.QueryAndExport - req param:{"transcode":"R227","source":"EDS","params":{"entName":"莱芜泰丰食品有限公司"},"userid":"11","orgid":"EDS","account":"EDS"}
+2021-09-03 14:14:59.280 [http-nio-8080-exec-5] INFO  com.amarsoft.exportexcel.request.QueryAndExport - response data:[]
+2021-09-03 14:14:59.284 [http-nio-8080-exec-5] ERROR com.amarsoft.controller.ApiController - 请求出错
+java.io.FileNotFoundException: 
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at com.amarsoft.controller.ApiController.reqApi(ApiController.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2021-09-03 14:15:19.564 [http-nio-8080-exec-6] INFO  com.amarsoft.controller.ApiController - 输入参数：{
+        "env": "test",
+        "tmp": "default",
+        "params": {
+                "transcode": "R227",
+                "userid": "11",
+                "orgid": "EDS",
+                "account": "EDS",
+                "source": "EDS",
+                "params": {
+                        "entName": "莱芜泰丰食品有限公司"
+                }
+        }
+}
+2021-09-03 14:15:21.839 [http-nio-8080-exec-6] INFO  com.amarsoft.exportexcel.request.QueryAndExport - req param:{"transcode":"R227","source":"EDS","params":{"entName":"莱芜泰丰食品有限公司"},"userid":"11","orgid":"EDS","account":"EDS"}
+2021-09-03 14:15:22.181 [http-nio-8080-exec-6] INFO  com.amarsoft.exportexcel.request.QueryAndExport - response data:[]
+2021-09-03 14:15:29.958 [http-nio-8080-exec-6] ERROR com.amarsoft.controller.ApiController - 请求出错
+java.io.FileNotFoundException: 
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at com.amarsoft.controller.ApiController.reqApi(ApiController.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2021-09-03 14:16:22.522 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
