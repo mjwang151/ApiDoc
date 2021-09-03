@@ -51,11 +51,12 @@ public class HomeController {
 
 	/**
 	 * 自动生成文档
+	 * http://192.168.61.102:7114/amarpack/swagger-ui.html#/
 	 * http://192.168.61.102:7114/amarpack/download?company=data&templateType=edsservice-icon&transcodes=R1103
 	 * @param downloadDocBean
 	 * @param resp
 	 */
-    @ApiOperation(value = "下载接口文档", notes = "aaa")
+    @ApiOperation(value = "下载接口文档", notes = "下载word文档")
     @ApiImplicitParams({
 			@ApiImplicitParam(name = "transcodes", value = "接口编号(用逗号隔开)", required = true, defaultValue = ""),
 			@ApiImplicitParam(name = "company", value = "data/credit", required = false, defaultValue = ""),

@@ -1,0 +1,22 @@
+2021-07-06 10:35:25.338 [main] INFO  com.amarsoft.AmarPackTest.TestExportDoc - Starting TestExportDoc using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 21160 (started by mjwang in H:\github\ApiDoc)
+2021-07-06 10:35:25.365 [main] INFO  com.amarsoft.AmarPackTest.TestExportDoc - The following profiles are active: dev
+2021-07-06 10:35:27.026 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-07-06 10:35:27.543 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-07-06 10:35:27.794 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-06 10:35:27.975 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-07-06 10:35:28.144 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-07-06 10:35:28.165 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-07-06 10:35:28.190 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-07-06 10:35:28.380 [main] INFO  com.amarsoft.AmarPackTest.TestExportDoc - Started TestExportDoc in 3.473 seconds (JVM running for 4.528)
+2021-07-06 10:35:28.617 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-07-06 10:35:28.834 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-07-06 10:35:29.250 [main] INFO  com.amarsoft.exportpdf.PdfCore - 开始转换...
+2021-07-06 10:35:31.360 [main] INFO  com.amarsoft.exportpdf.PdfCore - 打开文件: F:\R1105.docx
+2021-07-06 10:35:31.412 [main] INFO  com.amarsoft.exportpdf.PdfCore - 转换失败Invoke of: Open
+Source: Microsoft Word
+Description: 文件可能已经损坏。
+
+2021-07-06 10:35:31.413 [main] INFO  com.amarsoft.exportpdf.PdfCore - 导出pdf成功！！!!!!
+2021-07-06 10:35:31.433 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-06 10:35:31.435 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-07-06 10:35:31.447 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -36,3 +36,4 @@ server:
     basedir: .
 logging.config: ./config/logback-spring.xml
 doctemplate.config: ./config/doctemplate
+config.path: ./config/

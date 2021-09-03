@@ -32,8 +32,8 @@ public class Test {
 //        });
         DataBaseBean oneconfig = docServiceImpl.getOneconfig("dev", "amar_cr");
         System.out.println(oneconfig.toString());
-        Connection amar_cr = DataBaseConfig.getConn("amar_cr");
-        System.out.println(amar_cr);
+        DataBaseConfig.getConn("amar_cr");
+//        System.out.println(amar_cr);
 
 
     }

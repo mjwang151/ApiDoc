@@ -1,0 +1,1 @@
+select a.api,a.name,a.descr,b.* from TEST.asset_api a inner join TEST.asset_api_params b on a.apiid=b.apiid
