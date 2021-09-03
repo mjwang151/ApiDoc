@@ -49,7 +49,7 @@ public class ApiController {
       }
       }
      */
-    @ApiOperation(value = "接口数据下载", notes = "调接口自动生成解析的excel,样例：{\n" +
+    @ApiOperation(value = "接口数据下载", notes = "调接口自动生成解析的excel,样例：\n{\n" +
             "      \"env\": \"test\",\n" +
             "      \"tmp\": \"default\",\n" +
             "      \"params\": {\n" +
@@ -86,8 +86,8 @@ public class ApiController {
     public void reqApi(@RequestBody String params, HttpServletResponse response, HttpServletRequest request) {
         String fileName = "";
         try {
+            log.info("输入参数：{}",params);
             JSONObject paramsJo = JSONObject.parseObject(params);
-
             String env = JSONTools.getString(paramsJo, "env");
             String params2 = JSONTools.getString(paramsJo, "params");
             String tmp = JSONTools.getString(paramsJo, "tmp");
@@ -122,6 +122,7 @@ public class ApiController {
             input.close();
         } catch (Exception e) {
             e.printStackTrace();
+            log.error("请求出错",e);
         }
     }
 
