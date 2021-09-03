@@ -49,9 +49,23 @@ public class ApiController {
       }
       }
      */
-    @ApiOperation(value = "接口数据下载", notes = "调接口自动生成解析的excel")
+    @ApiOperation(value = "接口数据下载", notes = "调接口自动生成解析的excel,样例：{\n" +
+            "      \"env\": \"test\",\n" +
+            "      \"tmp\": \"default\",\n" +
+            "      \"params\": {\n" +
+            "      \"transcode\": \"R11C53\",\n" +
+            "      \"userid\": \"11\",\n" +
+            "      \"orgid\": \"EDS\",\n" +
+            "      \"account\": \"EDS\",\n" +
+            "      \"source\": \"EDS\",\n" +
+            "      \"params\": {\n" +
+            "      \"Name\": \"莱芜泰丰食品有限公司2\",\n" +
+            "      \"nametype\": \"1\"\n" +
+            "      }\n" +
+            "      }\n" +
+            "      }")
     @ApiImplicitParams({
-                    @ApiImplicitParam(name = "输入样例", value = "输入样例" ,paramType ="query", required = false, example = "{\n" +
+            @ApiImplicitParam(name = "params", value = "输入的请求参数" ,paramType ="body", required = true ,defaultValue ="{\n" +
                     "      \"env\": \"test\",\n" +
                     "      \"tmp\": \"default\",\n" +
                     "      \"params\": {\n" +
@@ -65,22 +79,7 @@ public class ApiController {
                     "      \"nametype\": \"1\"\n" +
                     "      }\n" +
                     "      }\n" +
-                    "      }" ,defaultValue = "{\n" +
-                    "      \"env\": \"test\",\n" +
-                    "      \"tmp\": \"default\",\n" +
-                    "      \"params\": {\n" +
-                    "      \"transcode\": \"R11C53\",\n" +
-                    "      \"userid\": \"11\",\n" +
-                    "      \"orgid\": \"EDS\",\n" +
-                    "      \"account\": \"EDS\",\n" +
-                    "      \"source\": \"EDS\",\n" +
-                    "      \"params\": {\n" +
-                    "      \"Name\": \"莱芜泰丰食品有限公司2\",\n" +
-                    "      \"nametype\": \"1\"\n" +
-                    "      }\n" +
-                    "      }\n" +
-                    "      }"),
-            @ApiImplicitParam(name = "params", value = "输入的请求参数" ,paramType ="body", required = true)
+                    "      }")
 
     })
     @RequestMapping(value = "/reqApi", method = RequestMethod.POST)
