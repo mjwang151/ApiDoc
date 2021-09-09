@@ -30,5 +30,16 @@ public class TransToExcel {
     private String UpdateTime;
     private String IsDelete;
 
+    /**
+     * 创建一个企业名称对应的key
+     * @return
+     */
+    public static TransToExcel buildAEntName(){
+        TransToExcel transToExcel = new TransToExcel();
+        transToExcel.setChName("请求主体名称");
+        transToExcel.setName("req_host_name");
+        return transToExcel;
+    }
+
 
 }

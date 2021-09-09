@@ -20,6 +20,7 @@ public class TransResultToExcel {
     List<TransToExcel> CurAllNode = new ArrayList<>();
 
     static List<TransToExcel> listTransToExcel = new ArrayList<>();
+    //存储所有接口的文档
 
     ExcelExportTemplate excelExportTemplate;
     public TransResultToExcel(ExcelExportTemplate excelExportTemplate){
@@ -66,13 +67,35 @@ public class TransResultToExcel {
         }
     }
 
-
+    /**
+     * 单笔结果处理
+     * @param path excel路径
+     * @param jsonArray 单条数据返回jsonarr
+     * @param transcode 接口编号
+     */
     public void parseJSONToExcel(String path,JSONArray jsonArray,String transcode){
-        Map<String, List<TransToExcel>> collect = listTransToExcel.parallelStream().filter(v->v.getIsDelete().equals("N")).filter(v->v.getParamType().equals("RESPONSE")).collect(Collectors.groupingBy(TransToExcel::getApi));
+        Map<String, List<TransToExcel>> collect = listTransToExcel.parallelStream().filter(v -> v.getIsDelete().equals("N")).filter(v -> v.getParamType().equals("RESPONSE")).collect(Collectors.groupingBy(TransToExcel::getApi));
         CurAllNode = collect.get(transcode);
         List<TransToExcel> level0List = CurAllNode.parallelStream().filter(v -> v.getLevel() == 0).sorted(Comparator.comparing(TransToExcel::getSortNo)).collect(Collectors.toList());
         String curKey = CurAllNode.get(0).getApiName();
         combineData("1",curKey,level0List,jsonArray);
+        excelExportTemplate.writeAddExcel(path, dataListMap, headMap);
+    }
+
+    /**
+     * 批量处理格式化数据
+     * @param path excel路径
+     * @param mapArr 多条数据返回jsonarr
+     * @param transcode 接口编号
+     */
+    public void batchParseJSONToExcel(String path,LinkedHashMap<String,JSONArray> mapArr,String transcode){
+        Map<String, List<TransToExcel>> collect = listTransToExcel.parallelStream().filter(v->v.getIsDelete().equals("N")).filter(v->v.getParamType().equals("RESPONSE")).collect(Collectors.groupingBy(TransToExcel::getApi));
+        CurAllNode = collect.get(transcode);
+        List<TransToExcel> level0List = CurAllNode.parallelStream().filter(v -> v.getLevel() == 0).sorted(Comparator.comparing(TransToExcel::getSortNo)).collect(Collectors.toList());
+        for (Map.Entry<String,JSONArray> jsonArray:mapArr.entrySet()){
+            String curKey = CurAllNode.get(0).getApiName();
+            batchCombineData("1",curKey,level0List,jsonArray.getValue(),jsonArray.getKey());
+        }
         excelExportTemplate.writeAddExcel(path, dataListMap, headMap);
     }
     /**
@@ -118,6 +141,48 @@ public class TransResultToExcel {
         }
         setValueToMap(dataListMap,index+"."+curKey,dataList_1);
     }
+
+    /**
+     * 批量处理-自动增加主键
+     * @param curNode  child node
+     * @param jsonArray  jsonarray
+     */
+    public  void batchCombineData(String index,String curKey,List<TransToExcel> curNode,JSONArray jsonArray,String key){
+        curNode.add(0,TransToExcel.buildAEntName());
+        ArrayList<ArrayList<String>> dataList_1 = new ArrayList<ArrayList<String>>();
+        ArrayList<ArrayList<String>> headMapFromList_1 = getHeadMapFromList(curNode);
+        setValueToHeadMap(headMap,index+"."+curKey,headMapFromList_1);
+        setValueToMap(dataListMap,index+"."+curKey,new ArrayList<ArrayList<String>>());
+        if(jsonArray != null){
+            for (int i = 0; i < jsonArray.size(); i++) {
+                JSONObject firstLevelJo = jsonArray.getJSONObject(i);
+                ArrayList<String> dataList_ch_1 = new  ArrayList<String>();
+                for (int j = 0; j < curNode.size(); j++) {
+                    //业务主体名称
+                    if(curNode.get(j).getName().equals("req_host_name")){
+                        dataList_ch_1.add(key);
+                    }else{
+                        String str1 = JSONTools.getString(firstLevelJo, curNode.get(j).getName(), "");
+                        dataList_ch_1.add(str1);
+                        if(isParentNode(curNode.get(j).getParamId())){
+                            int finalJ = j;
+                            List<TransToExcel> trans_node_2 = CurAllNode.stream().filter(v -> v.getParentParamId().equals(curNode.get(finalJ).getParamId())).sorted(Comparator.comparing(TransToExcel::getSortNo)).collect(Collectors.toList());
+                            JSONArray jsonArray2 = new JSONArray();
+                            if(str1.startsWith("{") && str1.endsWith("}")){
+                                jsonArray2.add(JSONObject.parseObject(str1));
+                            }else{
+                                jsonArray2 = JSONArray.parseArray(str1);
+                            }
+                            batchCombineData(index+"."+curNode.get(finalJ).getSortNo()+"",curNode.get(finalJ).getChName(),trans_node_2,jsonArray2,key);
+                        }
+                    }
+                }
+                dataList_1.add(dataList_ch_1);
+            }
+        }
+        setValueToMap(dataListMap,index+"."+curKey,dataList_1);
+    }
+
 
     /**
      * add data
