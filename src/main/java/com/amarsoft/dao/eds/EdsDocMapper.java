@@ -14,7 +14,7 @@ import java.util.List;
 @Component
 public interface EdsDocMapper {
 
-    @Select("select * from Asset_Api where api=#{transcode} limit 1")
+    @Select("select * from Asset_Api where api=#{transcode} and projectId='t2021040900182235' limit 1")
     AssetApi findApi(@Param("transcode") String transcode);
 
 
