@@ -18,7 +18,7 @@ public interface EdsDocMapper {
     AssetApi findApi(@Param("transcode") String transcode);
 
 
-    @Select("select * from asset_api_params where ApiId=(select max(apiid) from Asset_Api where api=#{transcode}) and isdelete = 'N' order by parentparamid,`level`,sortno ")
+    @Select("select * from asset_api_params where ApiId=(select max(apiid) from Asset_Api where api=#{transcode} and projectId='t2021040900182235') and isdelete = 'N'   order by parentparamid,`level`,sortno ")
     List<AssetApiParams> findParams(@Param("transcode") String transcode);
 
 }

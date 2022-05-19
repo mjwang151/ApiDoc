@@ -18,7 +18,7 @@ public interface DocMapper {
     AssetApi findApi(@Param("transcode") String transcode);
 
 
-    @Select("select * from asset_api_params where ApiId=(select max(apiid) from Asset_Api where api=#{transcode}) ")
+    @Select("select * from asset_api_params where ApiId=(select max(apiid) from Asset_Api where api=#{transcode} and projectId='t2021040900182235')  ")
     List<AssetApiParams> findParams(@Param("transcode") String transcode);
 
 }
