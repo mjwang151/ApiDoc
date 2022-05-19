@@ -215,7 +215,7 @@ public class InnerMessageUtil {
         int countin = 0;
         for (Map.Entry<String, AssetApiParams> entry : order_map_in.entrySet()) {
             countin++;
-            combineOutArr("2." + countin, "", combineTran(entry.getValue(), serviceBiz), map_inArr, map_inArr2);
+            combineOutArr("main-" + countin, "", combineTran(entry.getValue(), serviceBiz), map_inArr, map_inArr2);
         }
 
         Map<String, List<JSONObject>> map_outArr2 = new LinkedHashMap<String, List<JSONObject>>();
@@ -231,7 +231,7 @@ public class InnerMessageUtil {
         int count = 0;
         for (Map.Entry<String, AssetApiParams> entry : order_map.entrySet()) {
             count++;
-            combineOutArr("2." + count, "", combineTran(entry.getValue(), serviceBiz), map_outArr, map_outArr2);
+            combineOutArr("main-" + count, "", combineTran(entry.getValue(), serviceBiz), map_outArr, map_outArr2);
         }
 
 
@@ -270,13 +270,12 @@ public class InnerMessageUtil {
         }).collect(Collectors.toList());
         apiPre = (StringUtils.isBlank(apiPre) ? "" : (apiPre + "→")) + assetApiParams.getString("intf");
         out_map_outArr.put(countPre + assetApiParams.getString("intfname") + "(" + apiPre + ")", ll1);
-        int j = 1;
         for (int i = 0; i < ll1.size(); i++) {
             JSONObject jo = ll1.get(i);
             String paramid = JSONTools.getString(jo, "paramid");
+            Integer orderno = JSONTools.getInt(jo, "orderno");
             if (in_map_outArr.containsKey(paramid)) {
-                combineOutArr(countPre + "." + j, apiPre , jo, in_map_outArr, out_map_outArr);
-                j++;
+                combineOutArr(countPre + "-" + orderno, apiPre , jo, in_map_outArr, out_map_outArr);
             }
         }
     }
