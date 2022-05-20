@@ -1,0 +1,256 @@
+2022-05-19 16:04:19.476 [main] INFO  com.amarsoft.App - Starting App using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 23508 (H:\github\ApiDoc\target\classes started by mjwang in H:\github\ApiDoc)
+2022-05-19 16:04:19.484 [main] INFO  com.amarsoft.App - The following profiles are active: dev
+2022-05-19 16:04:20.420 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-05-19 16:04:20.430 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:04:20.430 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-19 16:04:20.430 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-19 16:04:20.503 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring embedded WebApplicationContext
+2022-05-19 16:04:20.503 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 988 ms
+2022-05-19 16:04:20.725 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2022-05-19 16:04:20.837 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-19 16:04:20.992 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-05-19 16:04:21.075 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:04:21.097 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/amarpack'
+2022-05-19 16:04:21.104 [main] INFO  com.amarsoft.App - Started App in 2.035 seconds (JVM running for 3.718)
+2022-05-19 16:04:59.333 [http-nio-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [1648877030] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-05-19 16:04:59.340 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 16:04:59.340 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-19 16:04:59.341 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-05-19 16:04:59.372 [http-nio-8080-exec-1] INFO  com.amarsoft.controller.HomeController - 开始生成接口文档：R1105
+2022-05-19 16:04:59.390 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-05-19 16:04:59.595 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-05-19 16:05:32.714 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-19 16:05:32.715 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-05-19 16:05:32.722 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-05-19 16:05:35.582 [main] INFO  com.amarsoft.App - Starting App using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 13944 (H:\github\ApiDoc\target\classes started by mjwang in H:\github\ApiDoc)
+2022-05-19 16:05:35.586 [main] INFO  com.amarsoft.App - The following profiles are active: dev
+2022-05-19 16:05:36.476 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-05-19 16:05:36.484 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:05:36.484 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-19 16:05:36.484 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-19 16:05:36.557 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring embedded WebApplicationContext
+2022-05-19 16:05:36.558 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 930 ms
+2022-05-19 16:05:36.783 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2022-05-19 16:05:36.887 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-19 16:05:37.054 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-05-19 16:05:37.126 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:05:37.148 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/amarpack'
+2022-05-19 16:05:37.156 [main] INFO  com.amarsoft.App - Started App in 2.112 seconds (JVM running for 2.943)
+2022-05-19 16:05:43.225 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-19 16:05:49.452 [main] INFO  com.amarsoft.App - Starting App using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 24804 (H:\github\ApiDoc\target\classes started by mjwang in H:\github\ApiDoc)
+2022-05-19 16:05:49.454 [main] INFO  com.amarsoft.App - The following profiles are active: dev
+2022-05-19 16:05:50.660 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-05-19 16:05:50.673 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:05:50.674 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-19 16:05:50.674 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-19 16:05:50.758 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring embedded WebApplicationContext
+2022-05-19 16:05:50.758 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1266 ms
+2022-05-19 16:05:51.068 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2022-05-19 16:05:51.177 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-19 16:05:51.345 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-05-19 16:05:51.434 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:05:51.457 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/amarpack'
+2022-05-19 16:05:51.466 [main] INFO  com.amarsoft.App - Started App in 2.725 seconds (JVM running for 3.526)
+2022-05-19 16:06:10.436 [http-nio-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [1648877030] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-05-19 16:06:10.441 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 16:06:10.441 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-19 16:06:10.442 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-05-19 16:06:10.477 [http-nio-8080-exec-1] INFO  com.amarsoft.controller.HomeController - 开始生成接口文档：R1105
+2022-05-19 16:06:10.495 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-05-19 16:06:10.671 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-05-19 16:06:28.789 [http-nio-8080-exec-2] INFO  com.amarsoft.controller.HomeController - 开始生成接口文档：RA2431
+2022-05-19 16:07:54.479 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-19 16:07:54.480 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-05-19 16:07:54.486 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-05-19 16:07:58.816 [main] INFO  com.amarsoft.App - Starting App using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 16572 (H:\github\ApiDoc\target\classes started by mjwang in H:\github\ApiDoc)
+2022-05-19 16:07:58.819 [main] INFO  com.amarsoft.App - The following profiles are active: dev
+2022-05-19 16:07:59.996 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-05-19 16:08:00.004 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:08:00.005 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-19 16:08:00.005 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-19 16:08:00.118 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring embedded WebApplicationContext
+2022-05-19 16:08:00.118 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1263 ms
+2022-05-19 16:08:00.534 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2022-05-19 16:08:00.669 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-19 16:08:00.841 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-05-19 16:08:00.928 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:08:00.951 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/amarpack'
+2022-05-19 16:08:00.961 [main] INFO  com.amarsoft.App - Started App in 2.64 seconds (JVM running for 3.481)
+2022-05-19 16:08:10.623 [http-nio-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [1648877030] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-05-19 16:08:10.630 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 16:08:10.634 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-19 16:08:10.635 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-05-19 16:08:10.674 [http-nio-8080-exec-1] INFO  com.amarsoft.controller.HomeController - 开始生成接口文档：RA2431
+2022-05-19 16:08:10.695 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-05-19 16:08:10.912 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-05-19 16:11:57.045 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-19 16:11:57.045 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-05-19 16:11:57.052 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-05-19 16:12:01.426 [main] INFO  com.amarsoft.App - Starting App using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 3896 (H:\github\ApiDoc\target\classes started by mjwang in H:\github\ApiDoc)
+2022-05-19 16:12:01.429 [main] INFO  com.amarsoft.App - The following profiles are active: dev
+2022-05-19 16:12:02.401 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-05-19 16:12:02.407 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:12:02.408 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-19 16:12:02.408 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-19 16:12:02.477 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring embedded WebApplicationContext
+2022-05-19 16:12:02.477 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1005 ms
+2022-05-19 16:12:02.707 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2022-05-19 16:12:02.822 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-19 16:12:02.993 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-05-19 16:12:03.064 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:12:03.088 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/amarpack'
+2022-05-19 16:12:03.095 [main] INFO  com.amarsoft.App - Started App in 2.184 seconds (JVM running for 3.106)
+2022-05-19 16:12:26.155 [http-nio-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [1648877030] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-05-19 16:12:26.161 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 16:12:26.161 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-19 16:12:26.162 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-05-19 16:12:26.199 [http-nio-8080-exec-1] INFO  com.amarsoft.controller.HomeController - 开始生成接口文档：RA2431
+2022-05-19 16:12:26.217 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-05-19 16:12:26.399 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-05-19 16:15:38.790 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-19 16:15:38.791 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-05-19 16:15:38.797 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-05-19 16:36:53.389 [main] INFO  com.amarsoft.App - Starting App using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 24520 (H:\github\ApiDoc\target\classes started by mjwang in H:\github\ApiDoc)
+2022-05-19 16:36:53.393 [main] INFO  com.amarsoft.App - The following profiles are active: dev
+2022-05-19 16:36:54.493 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-05-19 16:36:54.501 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:36:54.501 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-19 16:36:54.501 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-19 16:36:54.580 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring embedded WebApplicationContext
+2022-05-19 16:36:54.581 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1154 ms
+2022-05-19 16:36:54.847 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2022-05-19 16:36:54.968 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-19 16:36:55.166 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-05-19 16:36:55.245 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:36:55.266 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/amarpack'
+2022-05-19 16:36:55.274 [main] INFO  com.amarsoft.App - Started App in 2.371 seconds (JVM running for 3.221)
+2022-05-19 16:37:13.864 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 16:37:13.864 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-19 16:37:13.865 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-05-19 16:37:13.894 [http-nio-8080-exec-1] INFO  com.amarsoft.controller.HomeController - 开始生成接口文档：R1501
+2022-05-19 16:37:13.910 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-05-19 16:37:14.080 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-05-19 16:42:40.580 [http-nio-8080-exec-4] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [1648877030] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-05-19 16:42:40.582 [http-nio-8080-exec-4] INFO  com.amarsoft.controller.HomeController - 开始生成接口文档：R1501
+2022-05-19 16:43:15.390 [http-nio-8080-exec-5] INFO  com.amarsoft.controller.HomeController - 开始生成接口文档：R1501,R255
+2022-05-19 16:46:22.803 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-19 16:46:22.803 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-05-19 16:46:22.810 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-05-19 16:46:28.501 [main] INFO  com.amarsoft.App - Starting App using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 25512 (H:\github\ApiDoc\target\classes started by mjwang in H:\github\ApiDoc)
+2022-05-19 16:46:28.503 [main] INFO  com.amarsoft.App - The following profiles are active: dev
+2022-05-19 16:46:29.345 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-05-19 16:46:29.353 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:46:29.353 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-19 16:46:29.353 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-19 16:46:29.422 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring embedded WebApplicationContext
+2022-05-19 16:46:29.422 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 885 ms
+2022-05-19 16:46:29.652 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2022-05-19 16:46:29.759 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-19 16:46:29.897 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-05-19 16:46:29.972 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:46:29.994 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/amarpack'
+2022-05-19 16:46:30.002 [main] INFO  com.amarsoft.App - Started App in 1.981 seconds (JVM running for 3.012)
+2022-05-19 16:46:54.209 [http-nio-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [1648877030] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-05-19 16:46:54.214 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 16:46:54.215 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-19 16:46:54.216 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-05-19 16:46:54.248 [http-nio-8080-exec-1] INFO  com.amarsoft.controller.HomeController - 开始生成接口文档：R1501,R255
+2022-05-19 16:46:54.264 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-05-19 16:46:54.446 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-05-19 16:51:56.860 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-19 16:51:56.860 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-05-19 16:51:56.866 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-05-19 16:52:02.201 [main] INFO  com.amarsoft.App - Starting App using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 20520 (H:\github\ApiDoc\target\classes started by mjwang in H:\github\ApiDoc)
+2022-05-19 16:52:02.203 [main] INFO  com.amarsoft.App - The following profiles are active: dev
+2022-05-19 16:52:03.213 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-05-19 16:52:03.224 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:52:03.225 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-19 16:52:03.225 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-19 16:52:03.308 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring embedded WebApplicationContext
+2022-05-19 16:52:03.309 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1070 ms
+2022-05-19 16:52:03.609 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2022-05-19 16:52:03.722 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-19 16:52:03.903 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-05-19 16:52:03.979 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:52:04.000 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/amarpack'
+2022-05-19 16:52:04.007 [main] INFO  com.amarsoft.App - Started App in 2.241 seconds (JVM running for 3.193)
+2022-05-19 16:52:35.819 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-19 16:52:39.646 [main] INFO  com.amarsoft.App - Starting App using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 14676 (H:\github\ApiDoc\target\classes started by mjwang in H:\github\ApiDoc)
+2022-05-19 16:52:39.649 [main] INFO  com.amarsoft.App - The following profiles are active: dev
+2022-05-19 16:52:40.497 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-05-19 16:52:40.504 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:52:40.504 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-19 16:52:40.504 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-19 16:52:40.578 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring embedded WebApplicationContext
+2022-05-19 16:52:40.579 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 896 ms
+2022-05-19 16:52:40.779 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2022-05-19 16:52:40.879 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-19 16:52:41.015 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-05-19 16:52:41.089 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-05-19 16:52:41.111 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/amarpack'
+2022-05-19 16:52:41.119 [main] INFO  com.amarsoft.App - Started App in 1.903 seconds (JVM running for 2.895)
+2022-05-19 16:53:01.257 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 16:53:01.258 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-19 16:53:01.258 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-05-19 16:53:01.293 [http-nio-8080-exec-1] INFO  com.amarsoft.controller.HomeController - 开始生成接口文档：R1501,R314
+2022-05-19 16:53:01.313 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-05-19 16:53:01.542 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-05-19 16:56:49.697 [http-nio-8080-exec-4] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [1648877030] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-05-19 16:56:49.698 [http-nio-8080-exec-4] INFO  com.amarsoft.controller.HomeController - 开始生成接口文档：R1501
+2022-05-19 17:00:58.551 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m26s872ms677µs).
+2022-05-19 17:00:58.731 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-19 17:00:58.731 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-05-19 17:00:58.739 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-05-19 17:01:05.081 [main] INFO  com.amarsoft.App - Starting App using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 8120 (H:\github\ApiDoc\target\classes started by mjwang in H:\github\ApiDoc)
+2022-05-19 17:01:05.084 [main] INFO  com.amarsoft.App - The following profiles are active: dev
+2022-05-19 17:01:05.975 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-05-19 17:01:05.982 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-19 17:01:05.983 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-19 17:01:05.983 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-19 17:01:06.059 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring embedded WebApplicationContext
+2022-05-19 17:01:06.059 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 927 ms
+2022-05-19 17:01:06.293 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2022-05-19 17:01:06.393 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-19 17:01:06.543 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-05-19 17:01:06.645 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-05-19 17:01:06.677 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/amarpack'
+2022-05-19 17:01:06.686 [main] INFO  com.amarsoft.App - Started App in 2.043 seconds (JVM running for 3.365)
+2022-05-19 17:01:18.532 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 17:01:18.532 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-19 17:01:18.532 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-05-19 17:01:18.562 [http-nio-8080-exec-2] INFO  com.amarsoft.controller.HomeController - 开始生成接口文档：R1501,R314
+2022-05-19 17:01:18.578 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-05-19 17:01:18.758 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-05-19 17:02:51.802 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-19 17:02:51.803 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-05-19 17:02:51.809 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-05-19 17:02:56.921 [main] INFO  com.amarsoft.App - Starting App using Java 1.8.0_60 on DESKTOP-1M6TEO7 with PID 25516 (H:\github\ApiDoc\target\classes started by mjwang in H:\github\ApiDoc)
+2022-05-19 17:02:56.924 [main] INFO  com.amarsoft.App - The following profiles are active: dev
+2022-05-19 17:02:57.792 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-05-19 17:02:57.799 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-19 17:02:57.800 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-19 17:02:57.800 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-19 17:02:57.867 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring embedded WebApplicationContext
+2022-05-19 17:02:57.868 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 911 ms
+2022-05-19 17:02:58.076 [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2022-05-19 17:02:58.191 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-19 17:02:58.341 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-05-19 17:02:58.413 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-05-19 17:02:58.433 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/amarpack'
+2022-05-19 17:02:58.441 [main] INFO  com.amarsoft.App - Started App in 1.942 seconds (JVM running for 2.917)
+2022-05-19 17:03:31.578 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/amarpack] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 17:03:31.578 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-19 17:03:31.579 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-05-19 17:03:31.609 [http-nio-8080-exec-2] INFO  com.amarsoft.controller.HomeController - 开始生成接口文档：R1501,R314
+2022-05-19 17:03:31.625 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-05-19 17:03:31.800 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-05-19 17:56:13.863 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-19 17:56:13.864 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-05-19 17:56:13.869 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

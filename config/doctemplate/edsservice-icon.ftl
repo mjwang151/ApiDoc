@@ -2349,12 +2349,15 @@
 							</w:rPr>
 							<w:t>注意事项：</w:t>
 						</w:r>
+					</w:p>
+<#--					修改文档头部-->
+					<w:p w:rsidR="00BB02E3" w:rsidRDefault="00BB02E3">
 						<w:r>
 							<w:rPr>
 								<w:rFonts w:ascii="宋体" w:hAnsi="宋体"/>
 								<w:szCs w:val="21"/>
 							</w:rPr>
-							<w:t>每个接口只给出业务参数说明，即</w:t>
+							<w:t>1.每个接口只给出业务参数说明，即</w:t>
 						</w:r>
 						<w:proofErr w:type="spellStart"/>
 						<w:r>
@@ -2561,6 +2564,25 @@
 								<w:szCs w:val="21"/>
 							</w:rPr>
 							<w:t>}}</w:t>
+						</w:r>
+					</w:p>
+<#--					添加分页提示 20220520-->
+					<w:p w:rsidR="00BB02E3" w:rsidRDefault="00BB02E3">
+						<w:pPr>
+							<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+							<w:rPr>
+								<w:rFonts w:ascii="宋体" w:hAnsi="宋体"/>
+								<w:szCs w:val="21"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="宋体" w:hAnsi="宋体"/>
+								<w:bCs/>
+								<w:color w:val="FF0000"/>
+								<w:szCs w:val="21"/>
+							</w:rPr>
+							<w:t>2.若部分接口请求参数中包含pageIndex，pageSize等分页参数，不输入则代表默认只取第一页数据，可能会导致无法取到全量数据。获取全量数据需要循环所有页码调用才行。</w:t>
 						</w:r>
 					</w:p>
 					<w:p w:rsidR="00BB02E3" w:rsidRDefault="00BB02E3">
